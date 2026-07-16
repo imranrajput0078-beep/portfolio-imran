@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Imran Rajput — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="">
+</head>
+<body>
+
+<div class="spotlight" id="spotlight"></div>
+<div class="shell">
+<nav class="ledger">
+<div>
+<div class="nav-top-group">
+<div class="brand-mark">MR.IMRAN </div>
+<div class="nav-actions">
+
+<!-- 3-Mode Theme Settings -->
+<div class="theme-settings" id="themeSettings">
+<button class="theme-settings-btn" id="themeSettingsBtn" type="button"><i class="fa-solid fa-gear"></i></button>
+<div class="theme-panel" id="themePanel">
+<div class="tp-label">Appearance</div>
+<button class="tp-item" data-theme-mode="light"><i class="bi bi-moon-stars-fill"></i>Light theme</button>
+<button class="tp-item active" data-theme-mode="dark"><i class="fa-solid fa-moon"></i>Dark theme</button>
+<button class="tp-item" data-theme-mode="system"><i class="fa-solid fa-display"></i>Device default</button>
+</div>
+</div>
+
+<!-- Language -->
+<div class="lang-dropdown" id="langDropdown">
+<button class="lang-btn" id="langBtn" type="button"><i class="fa-solid fa-globe" style="font-size:.7rem"></i><span id="langBtnText">English (US)</span><i class="fa-solid fa-chevron-down"></i></button>
+<div class="lang-panel" id="langPanel">
+<button class="lang-panel-item active" data-lang="en-US">English (US)</button>
+<button class="lang-panel-item" data-lang="en-GB">British English (UK)</button>
+<button class="lang-panel-item" data-lang="en-AU">Australian English</button>
+<button class="lang-panel-item" data-lang="en-PK">Pakistani English</button>
+<button class="lang-panel-item" data-lang="ur">اردو</button>
+<button class="lang-panel-item" data-lang="hi">हिन्दी</button>
+<button class="lang-panel-item" data-lang="de">Deutsch</button>
+<button class="lang-panel-item" data-lang="es">Español</button>
+<button class="lang-panel-item" data-lang="fr">Français</button>
+<button class="lang-panel-item" data-lang="it">Italiano</button>
+</div>
+</div>
+
+<!-- LOGIN -->
+<button class="login-btn" id="loginOpen" type="button"><i class="fa-solid fa-right-to-bracket"></i><span data-t="login">Login</span></button>
+
+<!-- Hamburger -->
+<button class="hamburger" id="drawerOpen" type="button"><svg viewBox="0 0 24 24"><path class="bar bar-top" d="M3 6h18"/><path class="bar bar-mid" d="M3 12h18"/><path class="bar bar-bot" d="M3 18h18"/></svg><span id="burgerLabel" data-t="menu">Menu</span></button>
+</div>
+</div>
+<div class="search-bar"><input type="text" placeholder="Search..." id="searchInput" data-tp="ph_search"><i class="fa-solid fa-magnifying-glass s-icon"></i><button class="s-clear" id="searchClear" type="button">&times;</button></div>
+<div class="ledger-links" id="ledgerLinks">
+<a href="#hero"><i class="fa-solid fa-house"></i><span class="num">00</span><span data-t="nav_home">Home</span></a>
+<a href="#about"><i class="fa-solid fa-user"></i><span class="num">01</span><span data-t="nav_about">About</span></a>
+<a href="#work"><i class="fa-solid fa-briefcase"></i><span class="num">02</span><span data-t="nav_work">Work</span></a>
+<a href="#frontend"><i class="fa-solid fa-code"></i><span class="num">03</span><span data-t="nav_fe">Frontend Dev</span></a>
+<a href="#graphics"><i class="fa-solid fa-palette"></i><span class="num">04</span><span data-t="nav_gd">Graphic Design</span></a>
+<a href="#images"><i class="fa-solid fa-image"></i><span class="num">05</span><span data-t="nav_images">Images</span></a>
+<a href="#videos"><i class="fa-solid fa-video"></i><span class="num">06</span><span data-t="nav_videos">Videos</span></a>
+<a href="#consult"><i class="fa-solid fa-calendar-check"></i><span class="num">07</span><span data-t="nav_consult">Consultation</span></a>
+<a href="#contact"><i class="fa-solid fa-envelope"></i><span class="num">08</span><span data-t="nav_contact">Contact</span></a>
+</div>
+</div>
+<div class="ledger-foot mono">DERA ISMAIL KHAN, KPK<br>— <span data-t="available">AVAILABLE FOR WORK</span></div>
+</nav>
+
+<main>
+<section id="hero">
+<div class="eyebrow" data-t="hero_eyebrow">Personal Portfolio</div>
+<div class="hero-avatar"><div class="hero-avatar-inner"><img src="/IMG_20221120_121803_630~2.jpg" alt="Imran Rajput" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'"><span style="display:none">IR</span></div></div>
+<h1 class="hero-name">Imran Rajput<br><em data-t="hero_name_em">designs & builds.</em></h1>
+<div class="hero-role" data-t="hero_role">Web Developer — Frontend & Web Design</div>
+<p class="hero-bio" data-t="hero_bio">I build clean, responsive websites and handle everyday office & technical work with equal care — from Frontend code to MS Office documents. Currently available for freelance and full-time work.</p>
+<div class="hero-cta"><a href="#work" class="btn" data-t="hero_cta1">View Work</a><a href="#consult" class="btn-ghost" data-t="hero_cta2">Get in touch →</a></div>
+<div class="ticker-wrap"><div class="ticker-track"><span data-t="tick1">Website Development</span><span data-t="tick2">Frontend Development</span><span data-t="tick3">Web Design</span><span data-t="tick4">Graphic Design</span><span data-t="tick5">HTML</span><span data-t="tick6">CSS</span><span data-t="tick7">JavaScript</span><span data-t="tick8">MS Office</span><span data-t="tick1">Website Development</span><span data-t="tick2">Frontend Development</span><span data-t="tick3">Web Design</span><span data-t="tick4">Graphic Design</span><span data-t="tick5">HTML</span><span data-t="tick6">CSS</span><span data-t="tick7">JavaScript</span><span data-t="tick8">MS Office</span></div></div>
+</section>
+
+<section id="about">
+<div class="sec-head reveal"><span class="eyebrow mono">01</span><h2 data-t="about_title">About Me</h2></div>
+<div class="about-grid reveal">
+<div>
+<p data-t="about_p1">I'm a web developer and designer based in Pakistan, working across frontend development, web design, and everyday office & technical work. My approach is simple: understand the problem, then build it properly.</p>
+<p data-t="about_p2">Alongside web development, I also handle document, spreadsheet, and presentation work using MS Office, and hold a technical diploma in tube well operation — a mix of digital and hands-on skills.</p>
+<p data-t="about_p3">Over the years I've worked with individuals, small businesses, and startups — turning rough ideas into finished, working websites. I care about the small details: how a page feels to scroll through, how fast it loads, how clearly the content is organized, and how well it works on a phone versus a desktop.</p>
+<p data-t="about_p4">I believe good work comes from listening first. Before writing a single line of code, I try to understand what the client actually needs — not just what they ask for. That means asking questions, suggesting better approaches when I see one, and being honest about timelines and tradeoffs.</p>
+<p data-t="about_p5">Outside of pure development, I'm comfortable handling the practical side of projects too — proposals, documentation, spreadsheets, and presentations — so clients get a complete package, not just code.</p>
+<div class="eyebrow" style="margin:36px 0 14px" data-t="edu_label">Education</div>
+<div class="edu-list"><span class="edu-tag"><svg viewBox="0 0 24 24"><path d="M22 10L12 5 2 10l10 5 10-5z"/><path d="M6 12v5c0 1.5 3 3 6 3s6-1.5 6-3v-5"/></svg>Matric</span><span class="edu-tag"><svg viewBox="0 0 24 24"><path d="M22 10L12 5 2 10l10 5 10-5z"/><path d="M6 12v5c0 1.5 3 3 6 3s6-1.5 6-3v-5"/></svg>F.Sc</span></div>
+</div>
+<div>
+<div class="eyebrow" style="margin-bottom:16px" data-t="skills_label">Skills</div>
+<div class="skills-list">
+<span class="skill-tag"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 3.5 5.5 3.5 9s-1 6.5-3.5 9c-2.5-2.5-3.5-5.5-3.5-9s1-6.5 3.5-9z"/></svg><span data-t="sk1">Website Development</span></span>
+<span class="skill-tag"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="1.5"/><path d="M3 8h18"/><circle cx="6" cy="6" r=".6"/><circle cx="8.5" cy="6" r=".6"/></svg><span data-t="sk2">Frontend Development</span></span>
+<span class="skill-tag"><svg viewBox="0 0 24 24"><path d="M16 3l5 5-11 11H5v-5L16 3z"/><path d="M14 5l5 5"/></svg><span data-t="sk3">Web Design</span></span>
+<span class="skill-tag"><svg viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="1"/><path d="M8 8h8M8 12h8M8 16h5"/></svg><span data-t="sk4">MS Word</span></span>
+<span class="skill-tag"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="1"/><path d="M3 9h18M3 14h18M9 4v16M15 4v16"/></svg><span data-t="sk5">MS Excel</span></span>
+<span class="skill-tag"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="14" height="16" rx="1"/><path d="M17 9l4-2v10l-4-2"/></svg><span data-t="sk6">MS PowerPoint</span></span>
+<span class="skill-tag"><svg viewBox="0 0 24 24"><ellipse cx="12" cy="6" rx="8" ry="3"/><path d="M4 6v6c0 1.7 3.6 3 8 3s8-1.3 8-3V6"/><path d="M4 12v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"/></svg><span data-t="sk7">MS Access</span></span>
+<span class="skill-tag"><svg viewBox="0 0 24 24"><path d="M12 3v6"/><circle cx="12" cy="12" r="3"/><path d="M12 15v6M6 21c1-3 3-5 6-5s5 2 6 5"/></svg><span data-t="sk8">Tube Well Operator</span></span>
+<a class="image-card reveal" href="/IMG_20221120_123035_651~2.jpg" target="_blank" rel="noopener"><div class="image-frame"><img src="/IMG_20221120_123035_651~2.jpg" alt="" onerror="this.style.display='none'"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="1.5"/><circle cx="8.5" cy="9.5" r="1.5"/><path d="M21 16l-5-5-4 4-3-3-6 6"/></svg></div><div class="image-cap"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 3.5 5.5 3.5 9s-1 6.5-3.5 9c-2.5-2.5-3.5-5.5-3.5-9s1-6.5 3.5-9z"/></svg><span data-t="sk1">Website Development</span></div></a>
+
+</div>
+</div>
+</div>
+</section>
+
+<section id="work">
+<div class="sec-head reveal"><span class="eyebrow mono">02</span><h2 data-t="work_title">Selected Work</h2></div>
+<div class="work-row reveal"><div class="work-swatch"></div><div class="work-year mono"></div><div class="work-main"><h3>Nawras — <span data-t="w1t">Booking Platform</span></h3><p data-t="w1d">End-to-end redesign of a travel booking product, including a new design system.</p></div><div class="work-tags"><span>Product</span><span>·</span><span>UI</span></div></div>
+<div class="work-row reveal"><div class="work-swatch"></div><div class="work-year mono"></div><div class="work-main"><h3>Ledger — <span data-t="w2t">Finance Dashboard</span></h3><p data-t="w2d">Data-dense dashboard for a fintech startup, built with React and a custom chart library.</p></div><div class="work-tags"><span>Web App</span><span>·</span><span>Front-End</span></div></div>
+<div class="work-row reveal"><div class="work-swatch"></div><div class="work-year mono"></div><div class="work-main"><h3>Studio Alif — <span data-t="w3t">Brand & Site</span></h3><p data-t="w3d">Identity and marketing site for an independent design studio.</p></div><div class="work-tags"><span>Branding</span><span>·</span><span>Web</span></div></div>
+<div class="work-row reveal"><div class="work-swatch"></div><div class="work-year mono"></div><div class="work-main"><h3>Qissa — <span data-t="w4t">Reading App</span></h3><p data-t="w4d">Mobile reading app concept exploring typography-first interaction design.</p></div><div class="work-tags"><span>Mobile</span><span>·</span><span>Concept</span></div></div>
+</section>
+
+<section id="frontend">
+<div class="sec-head reveal"><span class="eyebrow mono">03</span><h2>Frontend Development UI</h2></div>
+<p class="reveal" style="color:#c9c5ba;max-width:64ch;margin-bottom:40px;font-size:1.06rem" data-t="fe_desc">Frontend development is the art of building everything a user sees and interacts with on a website. It combines structure, style, and behavior to create fast, responsive, and beautiful web experiences.</p>
+<div class="tech-grid">
+<div class="tech-card reveal"><div class="tech-card-icon"><i class="fa-brands fa-html5"></i></div><h3>HTML</h3><p data-t="fe_html">The backbone of every website. HTML defines the structure and content of web pages — headings, paragraphs, images, links, forms, and more.</p></div>
+<div class="tech-card reveal"><div class="tech-card-icon"><i class="fa-brands fa-css3-alt"></i></div><h3>CSS</h3><p data-t="fe_css">CSS controls the visual presentation — colors, layouts, fonts, spacing, animations, and responsive design for any screen size.</p></div>
+<div class="tech-card reveal"><div class="tech-card-icon"><i class="fa-brands fa-js"></i></div><h3>JavaScript</h3><p data-t="fe_js">JavaScript adds interactivity and logic — from dropdown menus to complex web applications with real-time updates.</p></div>
+</div>
+</section>
+<section id="graphics">
+<div class="sec-head reveal"><span class="eyebrow mono">04</span><h2 data-t="gd_title">Graphic Design</h2></div>
+<p class="reveal" style="color:#c9c5ba;max-width:64ch;margin-bottom:40px;font-size:1.06rem" data-t="gd_desc">Graphic design is the visual communication of ideas through images, typography, colors, and layouts.</p>
+<div class="tech-grid">
+<div class="tech-card reveal"><div class="tech-card-icon"><i class="fa-solid fa-pen-nib"></i></div><h3 data-t="gd_brand">Branding & Identity</h3><p data-t="gd_brand_d">Creating unique visual identities — logos, color palettes, typography systems, and brand guidelines.</p></div>
+<div class="tech-card reveal"><div class="tech-card-icon"><i class="fa-solid fa-image"></i></div><h3 data-t="gd_social">Social Media Design</h3><p data-t="gd_social_d">Designing eye-catching posts, stories, banners, and ad creatives for social platforms.</p></div>
+<div class="tech-card reveal"><div class="tech-card-icon"><i class="fa-solid fa-object-group"></i></div><h3 data-t="gd_print">Print & Marketing</h3><p data-t="gd_print_d">Creating business cards, flyers, brochures, posters, banners, and presentation decks.</p></div>
+</div>
+</section>
+
+<section id="images">
+<div class="sec-head reveal"><span class="eyebrow mono">05</span><h2 data-t="images_title">Images</h2></div>
+<div class="image-grid">
+<a class="image-card reveal" href="/web devloper 2.png" target="_blank" rel="noopener"><div class="image-frame"><img src="/web devloper 2.png" alt="" onerror="this.style.display='none'"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="1.5"/><circle cx="8.5" cy="9.5" r="1.5"/><path d="M21 16l-5-5-4 4-3-3-6 6"/></svg></div><div class="image-cap"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.5 3.5 5.5 3.5 9s-1 6.5-3.5 9c-2.5-2.5-3.5-5.5-3.5-9s1-6.5 3.5-9z"/></svg><span data-t="sk1">Website Development</span></div></a>
+<a class="image-card reveal" href="/web degsins 1 photflo.jpg" target="_blank" rel="noopener"><div class="image-frame"><img src="/web degsins 1 photflo.jpg" alt="" onerror="this.style.display='none'"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="1.5"/><circle cx="8.5" cy="9.5" r="1.5"/><path d="M21 16l-5-5-4 4-3-3-6 6"/></svg></div><div class="image-cap"><svg viewBox="0 0 24 24"><path d="M16 3l5 5-11 11H5v-5L16 3z"/><path d="M14 5l5 5"/></svg><span data-t="sk3">Web Design</span></div></a>
+<a class="image-card reveal" href="" target="_blank" rel="noopener"><div class="image-frame"><img src="/excel photflo.jfif" alt="" onerror="this.style.display='none'"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="1.5"/><circle cx="8.5" cy="9.5" r="1.5"/><path d="M21 16l-5-5-4 4-3-3-6 6"/></svg></div><div class="image-cap"><svg viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="1"/><path d="M8 8h8M8 12h8M8 16h5"/></svg><span data-t="img_ms">MS Word / Excel / PowerPoint</span></div></a>
+<a class="image-card reveal" href="/tub well photflol.jfif" target="_blank" rel="noopener"><div class="image-frame"><img src="/tub well photflol.jfif" alt="" onerror="this.style.display='none'"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="1.5"/><circle cx="8.5" cy="9.5" r="1.5"/><path d="M21 16l-5-5-4 4-3-3-6 6"/></svg></div><div class="image-cap"><svg viewBox="0 0 24 24"><path d="M12 3v6"/><circle cx="12" cy="12" r="3"/><path d="M12 15v6M6 21c1-3 3-5 6-5s5 2 6 5"/></svg><span data-t="sk8">Tube Well Operator</span></div></a>
+</div>
+</section>
+
+<section id="videos">
+<div class="sec-head reveal"><span class="eyebrow mono">06</span><h2 data-t="videos_title">Videos</h2></div>
+<div class="video-grid">
+<div class="video-card reveal"><video controls poster="" preload="none"><source src="/1.mp4" type="video/mp4"></video><div class="video-cap"><h4 data-t="vid1">Video 1</h4><span>Programming</span></div></div>
+<div class="video-card reveal"><video controls poster="" preload="none"><source src="/2.mp4" type="video/mp4"></video><div class="video-cap"><h4 data-t="vid2">Video 2</h4><span>Create a Free Webiste </span></div></div>
+<div class="video-card reveal"><video controls poster="" preload="none"><source src="/5.mp4" type="video/mp4"></video><div class="video-cap"><h4 data-t="vid3">Video 3</h4><span>Developer</span></div></div>
+<div class="video-card reveal"><video controls poster="" preload="none"><source src="/4.mp4" type="video/mp4"></video><div class="video-cap"><h4 data-t="vid4">Video 4</h4><span>C++ Programming</span></div></div>
+</div>
+</section>
+
+<section id="consult">
+<div class="sec-head reveal"><span class="eyebrow mono">07</span><h2 data-t="consult_title">Schedule a Free Consultation</h2></div>
+<div class="consult-grid">
+<div class="consult-left reveal">
+<h3 data-t="consult_h3">Let's Build Your Vision</h3>
+<p data-t="consult_p">Have a project, an idea, or a challenge? Let's turn it into a tailored digital solution — start the conversation today.</p>
+<a href="tel:+923362393232" class="consult-phone mono" data-t="consult_phone">Call us at: +92 336 2393232</a>
+<div class="consult-why">
+<h4 data-t="consult_why_h">Why Choose Imran Rajput?</h4>
+<ul class="consult-check-list">
+<li><i class="fa-solid fa-circle-check"></i><span data-t="cw1">Client-Centric Approach</span></li>
+<li><i class="fa-solid fa-circle-check"></i><span data-t="cw2">Results-Oriented</span></li>
+<li><i class="fa-solid fa-circle-check"></i><span data-t="cw3">Innovative Solutions</span></li>
+<li><i class="fa-solid fa-circle-check"></i><span data-t="cw4">Problem Solvers</span></li>
+<li><i class="fa-solid fa-circle-check"></i><span data-t="cw5">Skilled Expertise</span></li>
+<li><i class="fa-solid fa-circle-check"></i><span data-t="cw6">Transparent Practices</span></li>
+</ul>
+</div>
+<div class="consult-steps">
+<h4 style="width:100%" data-t="consult_next_h">What happens next?</h4>
+<div class="consult-step"><span class="step-num">1</span><span data-t="cs1">Initial Consultation</span></div>
+<span class="consult-step-sep">›</span>
+<div class="consult-step"><span class="step-num">2</span><span data-t="cs2">In-Depth Discussion</span></div>
+<span class="consult-step-sep">›</span>
+<div class="consult-step"><span class="step-num">3</span><span data-t="cs3">Custom Proposal</span></div>
+</div>
+</div>
+<div class="consult-form reveal">
+<h4 data-t="consult_form_h">Schedule a Free Consultation</h4>
+<form id="consultForm">
+<div class="cf-row">
+<div class="cf-field"><label data-t="cf_first">First name <span class="req">*</span></label><input type="text" required></div>
+<div class="cf-field"><label data-t="cf_last">Last name <span class="req">*</span></label><input type="text" required></div>
+</div>
+<div class="cf-field"><label data-t="cf_company">Company / Organization</label><input type="text"></div>
+<div class="cf-field"><label data-t="cf_email">Company email <span class="req">*</span></label><input type="email" placeholder="e.g. example@company.com" required></div>
+<div class="cf-field"><label data-t="cf_phone">Phone</label><input type="tel" data-tp="cf_phone_ph" placeholder="Optional, but makes it easier to reach you"></div>
+<div class="cf-field"><label data-t="cf_help">How Can We Help You? <span class="req">*</span></label>
+<select required>
+<option data-t="cf_opt1">Web Design and Development</option>
+<option data-t="cf_opt2">Graphic Design</option>
+<option data-t="cf_opt3">MS Office Work</option>
+<option data-t="cf_opt4">Other</option>
+</select>
+</div>
+<div class="cf-field"><label data-t="cf_details">Additional Details</label><textarea data-tp="cf_details_ph" placeholder="Tell us about your project goals and any existing website URLs. The more detail, the better!"></textarea></div>
+<label class="cf-consent"><input type="checkbox" required><span data-t="cf_consent">By submitting this form, I acknowledge that my information will be collected and used in accordance with the Privacy Policy for the purpose of responding to my inquiry.</span></label>
+<button type="submit" class="cf-submit" data-t="cf_submit">Submit Request</button>
+<div class="cf-note" id="consultNote"></div>
+</form>
+</div>
+</div>
+</section>
+
+<section id="contact">
+<div class="sec-head reveal"><span class="eyebrow mono">08</span><h2 data-t="contact_title">Contact Us</h2></div>
+<a href="mailto:imranrajput@gmail.com" class="contact-email reveal">Muhammadimran1056955@gmail.com <br>conatant no 03491920177</a>
+<div class="socials reveal"><a href="#" target="_blank" rel="noopener">LinkedIn</a><a href="#" target="_blank" rel="noopener">GitHub</a><a href="#" target="_blank" rel="noopener">Instagram</a></div><a href="#" target="_blank" 
+</section>
+</main>
+</div>
+
+<footer>
+<div class="footer-inner">
+<div class="footer-grid">
+<div class="footer-col about-col"><div class="footer-brand">I. Rajput</div><p data-t="footer_about">Web Developer & Designer based in DI Khan, Pakistan. Building clean, responsive websites with care and precision.</p><div class="footer-loc"><i class="fa-solid fa-location-dot"></i>DI Khan, PK</div></div>
+<div class="footer-col"><h4 data-t="footer_nav">Navigation</h4><a href="#hero"><i class="fa-solid fa-house"></i><span data-t="nav_home">Home</span></a><a href="#about"><i class="fa-solid fa-user"></i><span data-t="nav_about">About</span></a><a href="#work"><i class="fa-solid fa-briefcase"></i><span data-t="nav_work">Work</span></a><a href="#frontend"><i class="fa-solid fa-code"></i><span data-t="nav_fe">Frontend Dev</span></a><a href="#graphics"><i class="fa-solid fa-palette"></i><span data-t="nav_gd">Graphic Design</span></a><a href="#images"><i class="fa-solid fa-image"></i><span data-t="nav_images">Images</span></a><a href="#videos"><i class="fa-solid fa-video"></i><span data-t="nav_videos">Videos</span></a><a href="#consult"><i class="fa-solid fa-calendar-check"></i><span data-t="nav_consult">Consultation</span></a><a href="#contact"><i class="fa-solid fa-envelope"></i><span data-t="nav_contact">Contact</span></a></div>
+<div class="footer-col"><h4 data-t="footer_follow">Follow</h4><a href="#" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin-in"></i>LinkedIn</a><a href="#" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i>GitHub</a><a href="#" target="_blank" rel="noopener"><i class="fa-brands fa-instagram"></i>Instagram</a><a href="#" target="_blank" rel="noopener"><i class="fa-brands fa-youtube"></i>YouTube</a><a href="#" target="_blank" rel="noopener"><i class="fa-brands fa-x-twitter"></i>X (Twitter)</a><a href="#" target="_blank" rel="noopener"><i class="fa-brands fa-facebook-f"></i>Facebook</a></div>
+<div class="footer-col"><h4 data-t="footer_res">Resources</h4><a href="#" target="_blank" rel="noopener"><i class="fa-solid fa-pen-nib"></i><span data-t="res_blog">My Blog</span></a><a href="#" target="_blank" rel="noopener"><i class="fa-solid fa-file-lines"></i><span data-t="res_cv">Resume / CV</span></a><a href="#" target="_blank" rel="noopener"><i class="fa-solid fa-file-pdf"></i><span data-t="res_pdf">Portfolio PDF</span></a><a href="#" target="_blank" rel="noopener"><i class="fa-solid fa-code"></i><span data-t="res_code">Source Code</span></a><a href="#" target="_blank" rel="noopener"><i class="fa-solid fa-palette"></i><span data-t="res_ds">Design System</span></a></div>
+</div>
+<div class="footer-bottom"><span>&copy; Muhammad Imran Rajput</span><div class="footer-bottom-links"><a href="#" data-t="ft_terms">Terms</a><span class="sep">|</span><a href="#" data-t="ft_privacy">Privacy</a><span class="sep">|</span><a href="#" data-t="ft_cookies">Cookies</a></div><span data-t="ft_built">Built with care.</span></div>
+</div>
+</footer>
+
+<!-- LOGIN MODAL -->
+<div class="modal-overlay" id="loginOverlay">
+<div class="modal-card">
+<button class="modal-close" id="loginClose" type="button">&times;</button>
+<div class="modal-eyebrow" data-t="login_eyebrow">Welcome back</div>
+<h3 class="modal-title" data-t="login_title">Log in</h3>
+<form id="loginForm">
+<div class="field"><label data-t="login_email_l">Email</label><input type="email" id="loginEmail" placeholder="you@example.com" required></div>
+<div class="field"><label data-t="login_pass_l">Password</label><input type="password" id="loginPassword" placeholder="--------" required></div>
+<div class="field-row"><label><input type="checkbox"> <span data-t="login_remember">Remember me</span></label><a href="#" data-t="login_forgot">Forgot password?</a></div>
+<button type="submit" class="modal-submit" data-t="login_btn">Log In</button>
+<div class="modal-foot" data-t="login_foot">Don't have an account? <a href="#" data-t="login_signup">Sign up</a></div>
+<div class="modal-note" id="loginNote"></div>
+</form>
+</div>
+</div>
+
+<!-- DRAWER -->
+<div class="drawer-overlay" id="drawerOverlay"></div>
+<div class="drawer" id="drawer">
+<button class="drawer-close" id="drawerClose" type="button">&times;</button>
+<div class="drawer-search"><input type="text" placeholder="Search..." id="drawerSearch" data-tp="ph_search"><i class="fa-solid fa-magnifying-glass ds-icon"></i></div>
+<div class="drawer-settings">
+<button id="drawerThemeBtn" type="button"><i class="fa-solid fa-gear"></i> <span data-t="theme_word">Theme</span></button>
+<button id="drawerLangBtn" type="button"><i class="fa-solid fa-globe"></i> <span data-t="lang_word">Language</span></button>
+</div>
+<nav>
+<a href="#hero"><span>00</span><i class="fa-solid fa-house"></i><span data-t="nav_home">Home</span></a>
+<a href="#about"><span>01</span><i class="fa-solid fa-user"></i><span data-t="nav_about">About</span></a>
+<a href="#work"><span>02</span><i class="fa-solid fa-briefcase"></i><span data-t="nav_work">Work</span></a>
+<a href="#frontend"><span>03</span><i class="fa-solid fa-code"></i><span data-t="nav_fe">Frontend Dev</span></a>
+<a href="#graphics"><span>04</span><i class="fa-solid fa-palette"></i><span data-t="nav_gd">Graphic Design</span></a>
+<a href="#images"><span>05</span><i class="fa-solid fa-image"></i><span data-t="nav_images">Images</span></a>
+<a href="#videos"><span>06</span><i class="fa-solid fa-video"></i><span data-t="nav_videos">Videos</span></a>
+<a href="#consult"><span>07</span><i class="fa-solid fa-calendar-check"></i><span data-t="nav_consult">Consultation</span></a>
+<a href="#contact"><span>08</span><i class="fa-solid fa-envelope"></i><span data-t="nav_contact">Contact</span></a>
+</nav>
+<div class="drawer-foot">DI KHAN, PK — <span data-t="available">AVAILABLE FOR WORK</span></div>
+</div>
+
+<!-- TOAST -->
+<div class="toast" id="toast"></div>
+
+<!-- SCROLL TOP -->
+<button class="scroll-top" id="scrollTop" type="button"><svg viewBox="0 0 24 24"><path d="M12 19V5M5 12l7-7 7 7"/></svg></button>
+
+<script>
+/* ===== THEME ===== */
+const html=document.documentElement,themePanel=document.getElementById('themePanel'),themeBtn=document.getElementById('themeSettingsBtn'),tpItems=document.querySelectorAll('.tp-item');
+function setTheme(m){if(m==='system'){const d=window.matchMedia('(prefers-color-scheme:light)').matches?'light':'dark';html.setAttribute('data-theme',d)}else{html.setAttribute('data-theme',m)}tpItems.forEach(i=>{i.classList.toggle('active',i.dataset.themeMode===m)});localStorage.setItem('theme',m)}
+function initTheme(){const s=localStorage.getItem('theme')||'dark';setTheme(s)}
+tpItems.forEach(i=>i.addEventListener('click',()=>{setTheme(i.dataset.themeMode);themePanel.classList.remove('open')}));
+themeBtn.addEventListener('click',e=>{e.stopPropagation();themePanel.classList.toggle('open');document.getElementById('langPanel').classList.remove('open')});
+document.getElementById('drawerThemeBtn').addEventListener('click',()=>{const c=html.getAttribute('data-theme')==='dark'?'light':'dark';setTheme(c);showToast('Theme: '+c)});
+
+/* ===== TRANSLATIONS (English base; other languages fall back to English for new keys) ===== */
+const translations={
+"en-US":{login:"Login",menu:"Menu",theme_word:"Theme",lang_word:"Language",nav_home:"Home",nav_about:"About",nav_work:"Work",nav_fe:"Frontend Dev",nav_gd:"Graphic Design",nav_images:"Images",nav_videos:"Videos",nav_consult:"Consultation",nav_contact:"Contact",available:"AVAILABLE FOR WORK",hero_eyebrow:"Personal Portfolio",hero_name_em:"designs & builds.",hero_role:"Web Developer — Frontend & Web Design",hero_bio:"I build clean, responsive websites and handle everyday office & technical work with equal care — from Frontend code to MS Office documents. Currently available for freelance and full-time work.",hero_cta1:"View Work",hero_cta2:"Get in touch →",tick1:"Website Development",tick2:"Frontend Development",tick3:"Web Design",tick4:"Graphic Design",tick5:"HTML",tick6:"CSS",tick7:"JavaScript",tick8:"MS Office",about_title:"About Me",about_p1:"I'm a web developer and designer based in Pakistan, working across frontend development, web design, and everyday office & technical work. My approach is simple: understand the problem, then build it properly.",about_p2:"Alongside web development, I also handle document, spreadsheet, and presentation work using MS Office, and hold a technical diploma in tube well operation — a mix of digital and hands-on skills.",about_p3:"Over the years I've worked with individuals, small businesses, and startups — turning rough ideas into finished, working websites. I care about the small details: how a page feels to scroll through, how fast it loads, how clearly the content is organized, and how well it works on a phone versus a desktop.",about_p4:"I believe good work comes from listening first. Before writing a single line of code, I try to understand what the client actually needs — not just what they ask for. That means asking questions, suggesting better approaches when I see one, and being honest about timelines and tradeoffs.",about_p5:"Outside of pure development, I'm comfortable handling the practical side of projects too — proposals, documentation, spreadsheets, and presentations — so clients get a complete package, not just code.",edu_label:"Education",skills_label:"Skills",sk1:"Website Development",sk2:"Frontend Development",sk3:"Web Design",sk4:"MS Word",sk5:"MS Excel",sk6:"MS PowerPoint",sk7:"MS Access",sk8:"Tube Well Operator",work_title:"Selected Work",w1t:"Booking Platform",w1d:"End-to-end redesign of a travel booking product, including a new design system.",w2t:"Finance Dashboard",w2d:"Data-dense dashboard for a fintech startup, built with React and a custom chart library.",w3t:"Brand & Site",w3d:"Identity and marketing site for an independent design studio.",w4t:"Reading App",w4d:"Mobile reading app concept exploring typography-first interaction design.",fe_title:"Frontend Development",fe_desc:"Frontend development is the art of building everything a user sees and interacts with on a website. It combines structure, style, and behavior to create fast, responsive, and beautiful web experiences.",fe_html:"The backbone of every website. HTML defines the structure and content of web pages — headings, paragraphs, images, links, forms, and more.",fe_css:"CSS controls the visual presentation — colors, layouts, fonts, spacing, animations, and responsive design for any screen size.",fe_js:"JavaScript adds interactivity and logic — from dropdown menus to complex web applications with real-time updates.",gd_title:"Graphic Design",gd_desc:"Graphic design is the visual communication of ideas through images, typography, colors, and layouts.",gd_brand:"Branding & Identity",gd_brand_d:"Creating unique visual identities — logos, color palettes, typography systems, and brand guidelines.",gd_social:"Social Media Design",gd_social_d:"Designing eye-catching posts, stories, banners, and ad creatives for social platforms.",gd_print:"Print & Marketing",gd_print_d:"Creating business cards, flyers, brochures, posters, banners, and presentation decks.",images_title:"Images",img_ms:"MS Word / Excel / PowerPoint",videos_title:"Videos",vid1:"Video 1",vid2:"Video 2",vid3:"Video 3",vid4:"Video 4",consult_title:"Schedule a Free Consultation",consult_h3:"Let's Build Your Vision",consult_p:"Have a project, an idea, or a challenge? Let's turn it into a tailored digital solution — start the conversation today.",consult_phone:"Call us at: +92 336 2393232",consult_why_h:"Why Choose Imran Rajput?",cw1:"Client-Centric Approach",cw2:"Results-Oriented",cw3:"Innovative Solutions",cw4:"Problem Solvers",cw5:"Skilled Expertise",cw6:"Transparent Practices",consult_next_h:"What happens next?",cs1:"Initial Consultation",cs2:"In-Depth Discussion",cs3:"Custom Proposal",consult_form_h:"Schedule a Free Consultation",cf_first:"First name",cf_last:"Last name",cf_company:"Company / Organization",cf_email:"Company email",cf_phone:"Phone",cf_phone_ph:"Optional, but makes it easier to reach you",cf_help:"How Can We Help You?",cf_opt1:"Web Design and Development",cf_opt2:"Graphic Design",cf_opt3:"MS Office Work",cf_opt4:"Other",cf_details:"Additional Details",cf_details_ph:"Tell us about your project goals and any existing website URLs. The more detail, the better!",cf_consent:"By submitting this form, I acknowledge that my information will be collected and used in accordance with the Privacy Policy for the purpose of responding to my inquiry.",cf_submit:"Submit Request",contact_title:"Contact Us",footer_about:"Web Developer & Designer based in DI Khan, Pakistan. Building clean, responsive websites with care and precision.",footer_nav:"Navigation",footer_follow:"Follow",footer_res:"Resources",res_blog:"My Blog",res_cv:"Resume / CV",res_pdf:"Portfolio PDF",res_code:"Source Code",res_ds:"Design System",ft_terms:"Terms",ft_privacy:"Privacy",ft_cookies:"Cookies",ft_built:"Built with care.",login_eyebrow:"Welcome back",login_title:"Log in",login_email_l:"Email",login_pass_l:"Password",login_remember:"Remember me",login_forgot:"Forgot password?",login_btn:"Log In",login_foot:"Don't have an account?",login_signup:"Sign up",ph_search:"Search..."},
+"en-GB":{login:"Login",menu:"Menu",theme_word:"Theme",lang_word:"Language",nav_home:"Home",nav_about:"About",nav_work:"Work",nav_fe:"Frontend Dev",nav_gd:"Graphic Design",nav_images:"Images",nav_videos:"Videos",nav_contact:"Contact",available:"AVAILABLE FOR WORK",hero_eyebrow:"Personal Portfolio",hero_name_em:"designs & builds.",hero_role:"Web Developer — Frontend & Web Design",hero_bio:"I build clean, responsive websites and handle everyday office & technical work with equal care — from Frontend code to MS Office documents. Currently available for freelance and full-time work.",hero_cta1:"View Work",hero_cta2:"Get in touch →",tick1:"Website Development",tick2:"Frontend Development",tick3:"Web Design",tick4:"Graphic Design",tick5:"HTML",tick6:"CSS",tick7:"JavaScript",tick8:"MS Office",about_title:"About Me",about_p1:"I'm a web developer and designer based in Pakistan, working across frontend development, web design, and everyday office & technical work. My approach is simple: understand the problem, then build it properly.",about_p2:"Alongside web development, I also handle document, spreadsheet, and presentation work using MS Office, and hold a technical diploma in tube well operation — a mix of digital and hands-on skills.",edu_label:"Education",skills_label:"Skills",sk1:"Website Development",sk2:"Frontend Development",sk3:"Web Design",sk4:"MS Word",sk5:"MS Excel",sk6:"MS PowerPoint",sk7:"MS Access",sk8:"Tube Well Operator",work_title:"Selected Work",w1t:"Booking Platform",w1d:"End-to-end redesign of a travel booking product, including a new design system.",w2t:"Finance Dashboard",w2d:"Data-dense dashboard for a fintech startup, built with React and a bespoke chart library.",w3t:"Brand & Site",w3d:"Identity and marketing site for an independent design studio.",w4t:"Reading App",w4d:"Mobile reading app concept exploring typography-first interaction design.",fe_title:"Frontend Development",fe_desc:"Frontend development is the art of building everything a user sees and interacts with on a website. It combines structure, style, and behaviour to create fast, responsive, and beautiful web experiences.",fe_html:"The backbone of every website. HTML defines the structure and content of web pages — headings, paragraphs, images, links, forms, and more.",fe_css:"CSS controls the visual presentation — colours, layouts, fonts, spacing, animations, and responsive design for any screen size.",fe_js:"JavaScript adds interactivity and logic — from dropdown menus to complex web applications with real-time updates.",gd_title:"Graphic Design",gd_desc:"Graphic design is the visual communication of ideas through images, typography, colours, and layouts.",gd_brand:"Branding & Identity",gd_brand_d:"Creating unique visual identities — logos, colour palettes, typography systems, and brand guidelines.",gd_social:"Social Media Design",gd_social_d:"Designing eye-catching posts, stories, banners, and ad creatives for social platforms.",gd_print:"Print & Marketing",gd_print_d:"Creating business cards, flyers, brochures, posters, banners, and presentation decks.",images_title:"Images",img_ms:"MS Word / Excel / PowerPoint",videos_title:"Videos",vid1:"Video 1",vid2:"Video 2",vid3:"Video 3",vid4:"Video 4",contact_title:"Contact Us",footer_about:"Web Developer & Designer based in DI Khan, Pakistan. Building clean, responsive websites with care and precision.",footer_nav:"Navigation",footer_follow:"Follow",footer_res:"Resources",res_blog:"My Blog",res_cv:"CV",res_pdf:"Portfolio PDF",res_code:"Source Code",res_ds:"Design System",ft_terms:"Terms",ft_privacy:"Privacy",ft_cookies:"Cookies",ft_built:"Built with care.",login_eyebrow:"Welcome back",login_title:"Log in",login_email_l:"Email",login_pass_l:"Password",login_remember:"Remember me",login_forgot:"Forgotten password?",login_btn:"Log In",login_foot:"Don't have an account?",login_signup:"Sign up",ph_search:"Search..."},
+"en-AU":{login:"Login",menu:"Menu",theme_word:"Theme",lang_word:"Language",nav_home:"Home",nav_about:"About",nav_work:"Work",nav_fe:"Frontend Dev",nav_gd:"Graphic Design",nav_images:"Images",nav_videos:"Videos",nav_contact:"Contact",available:"AVAILABLE FOR WORK",hero_eyebrow:"Personal Portfolio",hero_name_em:"designs & builds.",hero_role:"Web Developer — Frontend & Web Design",hero_bio:"I build clean, responsive websites and handle everyday office & technical work with equal care — from Frontend code to MS Office documents. Currently available for freelance and full-time work.",hero_cta1:"View Work",hero_cta2:"Get in touch →",tick1:"Website Development",tick2:"Frontend Development",tick3:"Web Design",tick4:"Graphic Design",tick5:"HTML",tick6:"CSS",tick7:"JavaScript",tick8:"MS Office",about_title:"About Me",about_p1:"I'm a web developer and designer based in Pakistan, working across frontend development, web design, and everyday office & technical work. My approach is simple: understand the problem, then build it properly.",about_p2:"Alongside web development, I also handle document, spreadsheet, and presentation work using MS Office, and hold a technical diploma in tube well operation — a mix of digital and hands-on skills.",edu_label:"Education",skills_label:"Skills",sk1:"Website Development",sk2:"Frontend Development",sk3:"Web Design",sk4:"MS Word",sk5:"MS Excel",sk6:"MS PowerPoint",sk7:"MS Access",sk8:"Tube Well Operator",work_title:"Selected Work",w1t:"Booking Platform",w1d:"End-to-end redesign of a travel booking product, including a new design system.",w2t:"Finance Dashboard",w2d:"Data-dense dashboard for a fintech startup, built with React and a custom chart library.",w3t:"Brand & Site",w3d:"Identity and marketing site for an independent design studio.",w4t:"Reading App",w4d:"Mobile reading app concept exploring typography-first interaction design.",fe_title:"Frontend Development",fe_desc:"Frontend development is the art of building everything a user sees and interacts with on a website. It combines structure, style, and behaviour to create fast, responsive, and beautiful web experiences.",fe_html:"The backbone of every website. HTML defines the structure and content of web pages — headings, paragraphs, images, links, forms, and more.",fe_css:"CSS controls the visual presentation — colours, layouts, fonts, spacing, animations, and responsive design for any screen size.",fe_js:"JavaScript adds interactivity and logic — from dropdown menus to complex web applications with real-time updates.",gd_title:"Graphic Design",gd_desc:"Graphic design is the visual communication of ideas through images, typography, colours, and layouts.",gd_brand:"Branding & Identity",gd_brand_d:"Creating unique visual identities — logos, colour palettes, typography systems, and brand guidelines.",gd_social:"Social Media Design",gd_social_d:"Designing eye-catching posts, stories, banners, and ad creatives for social platforms.",gd_print:"Print & Marketing",gd_print_d:"Creating business cards, flyers, brochures, posters, banners, and presentation decks.",images_title:"Images",img_ms:"MS Word / Excel / PowerPoint",videos_title:"Videos",vid1:"Video 1",vid2:"Video 2",vid3:"Video 3",vid4:"Video 4",contact_title:"Contact Us",footer_about:"Web Developer & Designer based in DI Khan, Pakistan. Building clean, responsive websites with care and precision.",footer_nav:"Navigation",footer_follow:"Follow",footer_res:"Resources",res_blog:"My Blog",res_cv:"Resume / CV",res_pdf:"Portfolio PDF",res_code:"Source Code",res_ds:"Design System",ft_terms:"Terms",ft_privacy:"Privacy",ft_cookies:"Cookies",ft_built:"Built with care.",login_eyebrow:"Welcome back",login_title:"Log in",login_email_l:"Email",login_pass_l:"Password",login_remember:"Remember me",login_forgot:"Forgot password?",login_btn:"Log In",login_foot:"Don't have an account?",login_signup:"Sign up",ph_search:"Search..."},
+"en-PK":{login:"Login",menu:"Menu",theme_word:"Theme",lang_word:"Language",nav_home:"Home",nav_about:"About",nav_work:"Work",nav_fe:"Frontend Dev",nav_gd:"Graphic Design",nav_images:"Images",nav_videos:"Videos",nav_contact:"Contact",available:"AVAILABLE FOR WORK",hero_eyebrow:"Personal Portfolio",hero_name_em:"designs & builds.",hero_role:"Web Developer — Frontend & Web Design",hero_bio:"I build clean, responsive websites and handle everyday office & technical work with equal care — from Frontend code to MS Office documents. Currently available for freelance and full-time work.",hero_cta1:"View Work",hero_cta2:"Get in touch →",tick1:"Website Development",tick2:"Frontend Development",tick3:"Web Design",tick4:"Graphic Design",tick5:"HTML",tick6:"CSS",tick7:"JavaScript",tick8:"MS Office",about_title:"About Me",about_p1:"I'm a web developer and designer based in Pakistan, working across frontend development, web design, and everyday office & technical work. My approach is simple: understand the problem, then build it properly.",about_p2:"Alongside web development, I also handle document, spreadsheet, and presentation work using MS Office, and hold a technical diploma in tube well operation — a mix of digital and hands-on skills.",edu_label:"Education",skills_label:"Skills",sk1:"Website Development",sk2:"Frontend Development",sk3:"Web Design",sk4:"MS Word",sk5:"MS Excel",sk6:"MS PowerPoint",sk7:"MS Access",sk8:"Tube Well Operator",work_title:"Selected Work",w1t:"Booking Platform",w1d:"End-to-end redesign of a travel booking product, including a new design system.",w2t:"Finance Dashboard",w2d:"Data-dense dashboard for a fintech startup, built with React and a custom chart library.",w3t:"Brand & Site",w3d:"Identity and marketing site for an independent design studio.",w4t:"Reading App",w4d:"Mobile reading app concept exploring typography-first interaction design.",fe_title:"Frontend Development",fe_desc:"Frontend development is the art of building everything a user sees and interacts with on a website. It combines structure, style, and behaviour to create fast, responsive, and beautiful web experiences.",fe_html:"The backbone of every website. HTML defines the structure and content of web pages — headings, paragraphs, images, links, forms, and more.",fe_css:"CSS controls the visual presentation — colours, layouts, fonts, spacing, animations, and responsive design for any screen size.",fe_js:"JavaScript adds interactivity and logic — from dropdown menus to complex web applications with real-time updates.",gd_title:"Graphic Design",gd_desc:"Graphic design is the visual communication of ideas through images, typography, colours, and layouts.",gd_brand:"Branding & Identity",gd_brand_d:"Creating unique visual identities — logos, colour palettes, typography systems, and brand guidelines.",gd_social:"Social Media Design",gd_social_d:"Designing eye-catching posts, stories, banners, and ad creatives for social platforms.",gd_print:"Print & Marketing",gd_print_d:"Creating business cards, flyers, brochures, posters, banners, and presentation decks.",images_title:"Images",img_ms:"MS Word / Excel / PowerPoint",videos_title:"Videos",vid1:"Video 1",vid2:"Video 2",vid3:"Video 3",vid4:"Video 4",contact_title:"Contact Us",footer_about:"Web Developer & Designer based in DI Khan, Pakistan. Building clean, responsive websites with care and precision.",footer_nav:"Navigation",footer_follow:"Follow",footer_res:"Resources",res_blog:"My Blog",res_cv:"Resume / CV",res_pdf:"Portfolio PDF",res_code:"Source Code",res_ds:"Design System",ft_terms:"Terms",ft_privacy:"Privacy",ft_cookies:"Cookies",ft_built:"Built with care.",login_eyebrow:"Welcome back",login_title:"Log in",login_email_l:"Email",login_pass_l:"Password",login_remember:"Remember me",login_forgot:"Forgot password?",login_btn:"Log In",login_foot:"Don't have an account?",login_signup:"Sign up",ph_search:"Search..."},
+"ur":{login:"لاگ ان",menu:"مینو",theme_word:"تھیم",lang_word:"زبان",nav_home:"ہوم",nav_about:"تعارف",nav_work:"کام",nav_fe:"فرنٹ اینڈ ڈویلپمنٹ",nav_gd:"گرافک ڈیزائن",nav_images:"تصاویر",nav_videos:"ویڈیوز",nav_contact:"رابطہ",available:"کام کے لیے دستیاب",hero_eyebrow:"ذاتی پورٹ فولیو",hero_name_em:"ڈیزائن کرتا ہے، بناتا ہے۔",hero_role:"ویب ڈویلپر — فرنٹ اینڈ اور ویب ڈیزائن",hero_bio:"میں صاف ستھری، ریسپانسو ویب سائٹس بناتا ہوں اور روزمرہ کے دفتری و تکنیکی کام بھی اتنی ہی توجہ سے کرتا ہوں — فرنٹ اینڈ کوڈ سے لے کر MS Office دستاویزات تک۔ فری لانس اور فل ٹائم کام کے لیے دستیاب ہوں۔",hero_cta1:"کام دیکھیں",hero_cta2:"رابطہ کریں →",tick1:"ویب سائٹ ڈویلپمنٹ",tick2:"فرنٹ اینڈ ڈویلپمنٹ",tick3:"ویب ڈیزائن",tick4:"گرافک ڈیزائن",tick5:"ایچ ٹی ایم ایل",tick6:"سی ایس ایس",tick7:"جاوا اسکرپٹ",tick8:"ایم ایس آفس",about_title:"میرے بارے میں",about_p1:"میں پاکستان میں مقیم ایک ویب ڈویلپر اور ڈیزائنر ہوں، جو فرنٹ اینڈ ڈویلپمنٹ، ویب ڈیزائن اور روزمرہ کے دفتری و تکنیکی کاموں پر کام کرتا ہوں۔ میرا طریقہ کار سادہ ہے: پہلے مسئلہ سمجھو، پھر اسے درست طریقے سے بناؤ۔",about_p2:"ویب ڈویلپمنٹ کے ساتھ ساتھ میں MS Office کے ذریعے دستاویزات، اسپریڈ شیٹس اور پریزنٹیشنز کا کام بھی کرتا ہوں، اور ٹیوب ویل آپریشن میں تکنیکی ڈپلومہ بھی رکھتا ہوں — ڈیجیٹل اور عملی مہارتوں کا امتزاج۔",edu_label:"تعلیم",skills_label:"مہارتیں",sk1:"ویب سائٹ ڈویلپمنٹ",sk2:"فرنٹ اینڈ ڈویلپمنٹ",sk3:"ویب ڈیزائن",sk4:"ایم ایس ورڈ",sk5:"ایم ایس ایکسل",sk6:"ایم ایس پاور پوائنٹ",sk7:"ایم ایس ایکسیس",sk8:"ٹیوب ویل آپریٹر",work_title:"منتخب کام",w1t:"بکنگ پلیٹ فارم",w1d:"ٹریول بکنگ پروڈکٹ کا مکمل ری ڈیزائن، بشمول نیا ڈیزائن سسٹم۔",w2t:"فنانس ڈیش بورڈ",w2d:"ایک فن ٹیک اسٹارٹ اپ کے لیے ڈیٹا سے بھرپور ڈیش بورڈ، جو React اور کسٹم چارٹ لائبریری سے بنایا گیا۔",w3t:"برانڈ اینڈ سائٹ",w3d:"ایک آزاد ڈیزائن اسٹوڈیو کے لیے شناخت اور مارکیٹنگ سائٹ۔",w4t:"ریڈنگ ایپ",w4d:"موبائل ریڈنگ ایپ کا تصور، جو ٹائپوگرافی پر مبنی انٹرایکشن ڈیزائن کو دریافت کرتا ہے۔",fe_title:"فرنٹ اینڈ ڈویلپمنٹ",fe_desc:"فرنٹ اینڈ ڈویلپمنٹ وہ فن ہے جس میں صارف کو ویب سائٹ پر نظر آنے والی اور اس کے ساتھ تعامل کرنے والی ہر چیز بنائی جاتی ہے۔ یہ ساخت، انداز اور رویے کو ملا کر تیز، ریسپانسو اور خوبصورت ویب تجربات تخلیق کرتی ہے۔",fe_html:"ہر ویب سائٹ کی بنیاد۔ HTML ویب پیجز کی ساخت اور مواد کا تعین کرتا ہے — عنوانات، پیراگراف، تصاویر، لنکس، فارمز وغیرہ۔",fe_css:"CSS بصری پیشکش کو کنٹرول کرتا ہے — رنگ، لے آؤٹ، فونٹس، اسپیسنگ، اینیمیشنز اور ہر اسکرین کے لیے ریسپانسو ڈیزائن۔",fe_js:"جاوا اسکرپٹ انٹرایکٹیویٹی اور لاجک شامل کرتی ہے — ڈراپ ڈاؤن مینیوز سے لے کر ریئل ٹائم اپڈیٹس والے پیچیدہ ویب ایپلیکیشنز تک۔",gd_title:"گرافک ڈیزائن",gd_desc:"گرافک ڈیزائن تصاویر، ٹائپوگرافی، رنگوں اور لے آؤٹس کے ذریعے خیالات کی بصری ترسیل ہے۔",gd_brand:"برانڈنگ اور شناخت",gd_brand_d:"منفرد بصری شناختیں بنانا — لوگو، رنگوں کے پیلیٹ، ٹائپوگرافی سسٹمز اور برانڈ گائیڈ لائنز۔",gd_social:"سوشل میڈیا ڈیزائن",gd_social_d:"سوشل پلیٹ فارمز کے لیے دلکش پوسٹس، اسٹوریز، بینرز اور اشتہاری تخلیقات بنانا۔",gd_print:"پرنٹ اور مارکیٹنگ",gd_print_d:"بزنس کارڈز، فلائرز، بروشرز، پوسٹرز، بینرز اور پریزنٹیشن ڈیکس بنانا۔",images_title:"تصاویر",img_ms:"ایم ایس ورڈ / ایکسل / پاور پوائنٹ",videos_title:"ویڈیوز",vid1:"ویڈیو 1",vid2:"ویڈیو 2",vid3:"ویڈیو 3",vid4:"ویڈیو 4",contact_title:"ہم سے رابطہ کریں",footer_about:"ڈی آئی خان، پاکستان میں مقیم ویب ڈویلپر اور ڈیزائنر۔ توجہ اور درستگی کے ساتھ صاف ستھری، ریسپانسو ویب سائٹس بناتا ہوں۔",footer_nav:"نیویگیشن",footer_follow:"فالو کریں",footer_res:"وسائل",res_blog:"میرا بلاگ",res_cv:"ریزیومے / سی وی",res_pdf:"پورٹ فولیو پی ڈی ایف",res_code:"سورس کوڈ",res_ds:"ڈیزائن سسٹم",ft_terms:"شرائط",ft_privacy:"رازداری",ft_cookies:"کوکیز",ft_built:"توجہ سے بنایا گیا۔",login_eyebrow:"خوش آمدید",login_title:"لاگ ان کریں",login_email_l:"ای میل",login_pass_l:"پاس ورڈ",login_remember:"یاد رکھیں",login_forgot:"پاس ورڈ بھول گئے؟",login_btn:"لاگ ان کریں",login_foot:"اکاؤنٹ نہیں ہے؟",login_signup:"سائن اپ کریں",ph_search:"تلاش کریں..."},
+"hi":{login:"लॉगिन",menu:"मेनू",theme_word:"थीम",lang_word:"भाषा",nav_home:"होम",nav_about:"परिचय",nav_work:"कार्य",nav_fe:"फ्रंटएंड डेवलपमेंट",nav_gd:"ग्राफिक डिज़ाइन",nav_images:"छवियां",nav_videos:"वीडियो",nav_contact:"संपर्क",available:"काम के लिए उपलब्ध",hero_eyebrow:"व्यक्तिगत पोर्टफोलियो",hero_name_em:"डिज़ाइन करता है, बनाता है।",hero_role:"वेब डेवलपर — फ्रंटएंड और वेब डिज़ाइन",hero_bio:"मैं साफ-सुथरी, रिस्पॉन्सिव वेबसाइटें बनाता हूं और रोज़मर्रा के दफ्तरी व तकनीकी काम भी उतनी ही सावधानी से करता हूं — फ्रंटएंड कोड से लेकर MS Office दस्तावेज़ों तक। फ्रीलांस और फुल-टाइम काम के लिए उपलब्ध हूं।",hero_cta1:"काम देखें",hero_cta2:"संपर्क करें →",tick1:"वेबसाइट डेवलपमेंट",tick2:"फ्रंटएंड डेवलपमेंट",tick3:"वेब डिज़ाइन",tick4:"ग्राफिक डिज़ाइन",tick5:"एचटीएमएल",tick6:"सीएसएस",tick7:"जावास्क्रिप्ट",tick8:"एमएस ऑफिस",about_title:"मेरे बारे में",about_p1:"मैं पाकिस्तान में स्थित एक वेब डेवलपर और डिज़ाइनर हूं, जो फ्रंटएंड डेवलपमेंट, वेब डिज़ाइन और रोज़मर्रा के दफ्तरी व तकनीकी काम करता हूं। मेरा तरीका सरल है: पहले समस्या समझो, फिर उसे सही ढंग से बनाओ।",about_p2:"वेब डेवलपमेंट के साथ-साथ मैं MS Office के ज़रिए दस्तावेज़, स्प्रेडशीट और प्रेजेंटेशन का काम भी करता हूं, और ट्यूबवेल ऑपरेशन में तकनीकी डिप्लोमा भी रखता हूं — डिजिटल और व्यावहारिक कौशल का मेल।",edu_label:"शिक्षा",skills_label:"कौशल",sk1:"वेबसाइट डेवलपमेंट",sk2:"फ्रंटएंड डेवलपमेंट",sk3:"वेब डिज़ाइन",sk4:"एमएस वर्ड",sk5:"एमएस एक्सेल",sk6:"एमएस पावरपॉइंट",sk7:"एमएस एक्सेस",sk8:"ट्यूबवेल ऑपरेटर",work_title:"चुनिंदा काम",w1t:"बुकिंग प्लेटफॉर्म",w1d:"एक ट्रैवल बुकिंग प्रोडक्ट का संपूर्ण पुनर्डिज़ाइन, जिसमें एक नया डिज़ाइन सिस्टम शामिल है।",w2t:"फाइनेंस डैशबोर्ड",w2d:"एक फिनटेक स्टार्टअप के लिए डेटा से भरपूर डैशबोर्ड, जो React और कस्टम चार्ट लाइब्रेरी से बनाया गया।",w3t:"ब्रांड और साइट",w3d:"एक स्वतंत्र डिज़ाइन स्टूडियो के लिए पहचान और मार्केटिंग साइट।",w4t:"रीडिंग ऐप",w4d:"मोबाइल रीडिंग ऐप का विचार, जो टाइपोग्राफी-केंद्रित इंटरैक्शन डिज़ाइन को खोजता है।",fe_title:"फ्रंटएंड डेवलपमेंट",fe_desc:"फ्रंटएंड डेवलपमेंट वह कला है जिसमें उपयोगकर्ता को वेबसाइट पर दिखने वाली और उससे जुड़ी हर चीज़ बनाई जाती है। यह संरचना, शैली और व्यवहार को मिलाकर तेज़, रिस्पॉन्सिव और सुंदर वेब अनुभव बनाती है।",fe_html:"हर वेबसाइट की नींव। HTML वेब पेजों की संरचना और सामग्री तय करता है — शीर्षक, पैराग्राफ, छवियां, लिंक, फॉर्म और बहुत कुछ।",fe_css:"CSS दृश्य प्रस्तुति को नियंत्रित करता है — रंग, लेआउट, फॉन्ट, स्पेसिंग, एनिमेशन और हर स्क्रीन के लिए रिस्पॉन्सिव डिज़ाइन।",fe_js:"जावास्क्रिप्ट इंटरैक्टिविटी और लॉजिक जोड़ती है — ड्रॉपडाउन मेनू से लेकर रीयल-टाइम अपडेट वाले जटिल वेब एप्लिकेशन तक।",gd_title:"ग्राफिक डिज़ाइन",gd_desc:"ग्राफिक डिज़ाइन छवियों, टाइपोग्राफी, रंगों और लेआउट के माध्यम से विचारों का दृश्य संचार है।",gd_brand:"ब्रांडिंग और पहचान",gd_brand_d:"अनोखी दृश्य पहचान बनाना — लोगो, रंग पैलेट, टाइपोग्राफी सिस्टम और ब्रांड गाइडलाइन।",gd_social:"सोशल मीडिया डिज़ाइन",gd_social_d:"सोशल प्लेटफॉर्म के लिए आकर्षक पोस्ट, स्टोरी, बैनर और विज्ञापन डिज़ाइन बनाना।",gd_print:"प्रिंट और मार्केटिंग",gd_print_d:"बिज़नेस कार्ड, फ्लायर, ब्रोशर, पोस्टर, बैनर और प्रेजेंटेशन डेक बनाना।",images_title:"छवियां",img_ms:"एमएस वर्ड / एक्सेल / पावरपॉइंट",videos_title:"वीडियो",vid1:"वीडियो 1",vid2:"वीडियो 2",vid3:"वीडियो 3",vid4:"वीडियो 4",contact_title:"हमसे संपर्क करें",footer_about:"डी.आई. खान, पाकिस्तान में स्थित वेब डेवलपर और डिज़ाइनर। सावधानी और सटीकता के साथ साफ-सुथरी, रिस्पॉन्सिव वेबसाइटें बनाता हूं।",footer_nav:"नेविगेशन",footer_follow:"फॉलो करें",footer_res:"संसाधन",res_blog:"मेरा ब्लॉग",res_cv:"रिज़्यूमे / सीवी",res_pdf:"पोर्टफोलियो पीडीएफ",res_code:"सोर्स कोड",res_ds:"डिज़ाइन सिस्टम",ft_terms:"शर्तें",ft_privacy:"गोपनीयता",ft_cookies:"कुकीज़",ft_built:"सावधानी से बनाया गया।",login_eyebrow:"वापसी पर स्वागत है",login_title:"लॉग इन करें",login_email_l:"ईमेल",login_pass_l:"पासवर्ड",login_remember:"मुझे याद रखें",login_forgot:"पासवर्ड भूल गए?",login_btn:"लॉग इन करें",login_foot:"खाता नहीं है?",login_signup:"साइन अप करें",ph_search:"खोजें..."},
+"de":{login:"Anmelden",menu:"Menü",theme_word:"Design",lang_word:"Sprache",nav_home:"Start",nav_about:"Über mich",nav_work:"Projekte",nav_fe:"Frontend-Entwicklung",nav_gd:"Grafikdesign",nav_images:"Bilder",nav_videos:"Videos",nav_contact:"Kontakt",available:"VERFÜGBAR FÜR AUFTRÄGE",hero_eyebrow:"Persönliches Portfolio",hero_name_em:"gestaltet & entwickelt.",hero_role:"Webentwickler — Frontend & Webdesign",hero_bio:"Ich baue saubere, responsive Websites und erledige alltägliche Büro- und technische Aufgaben mit derselben Sorgfalt — von Frontend-Code bis zu MS-Office-Dokumenten. Aktuell verfügbar für freiberufliche und Vollzeitarbeit.",hero_cta1:"Projekte ansehen",hero_cta2:"Kontakt aufnehmen →",tick1:"Website-Entwicklung",tick2:"Frontend-Entwicklung",tick3:"Webdesign",tick4:"Grafikdesign",tick5:"HTML",tick6:"CSS",tick7:"JavaScript",tick8:"MS Office",about_title:"Über mich",about_p1:"Ich bin ein in Pakistan ansässiger Webentwickler und Designer, tätig in Frontend-Entwicklung, Webdesign sowie alltäglicher Büro- und technischer Arbeit. Mein Ansatz ist einfach: das Problem verstehen, dann richtig umsetzen.",about_p2:"Neben der Webentwicklung übernehme ich auch Dokument-, Tabellen- und Präsentationsarbeiten mit MS Office und besitze ein technisches Diplom im Betrieb von Tiefbrunnen — eine Mischung aus digitalen und praktischen Fähigkeiten.",edu_label:"Ausbildung",skills_label:"Fähigkeiten",sk1:"Website-Entwicklung",sk2:"Frontend-Entwicklung",sk3:"Webdesign",sk4:"MS Word",sk5:"MS Excel",sk6:"MS PowerPoint",sk7:"MS Access",sk8:"Tiefbrunnen-Betreiber",work_title:"Ausgewählte Projekte",w1t:"Buchungsplattform",w1d:"Komplette Neugestaltung eines Reisebuchungsprodukts inklusive neuem Designsystem.",w2t:"Finanz-Dashboard",w2d:"Datenreiches Dashboard für ein Fintech-Startup, gebaut mit React und einer eigenen Diagramm-Bibliothek.",w3t:"Marke & Website",w3d:"Identität und Marketing-Website für ein unabhängiges Designstudio.",w4t:"Lese-App",w4d:"Konzept einer mobilen Lese-App mit Fokus auf typografiegetriebenem Interaktionsdesign.",fe_title:"Frontend-Entwicklung",fe_desc:"Frontend-Entwicklung ist die Kunst, alles zu bauen, was ein Nutzer auf einer Website sieht und mit dem er interagiert. Sie verbindet Struktur, Stil und Verhalten zu schnellen, responsiven und schönen Web-Erlebnissen.",fe_html:"Das Rückgrat jeder Website. HTML definiert Struktur und Inhalt von Webseiten — Überschriften, Absätze, Bilder, Links, Formulare und mehr.",fe_css:"CSS steuert die visuelle Darstellung — Farben, Layouts, Schriftarten, Abstände, Animationen und responsives Design für jede Bildschirmgröße.",fe_js:"JavaScript sorgt für Interaktivität und Logik — von Dropdown-Menüs bis zu komplexen Web-Anwendungen mit Echtzeit-Updates.",gd_title:"Grafikdesign",gd_desc:"Grafikdesign ist die visuelle Vermittlung von Ideen durch Bilder, Typografie, Farben und Layouts.",gd_brand:"Branding & Identität",gd_brand_d:"Entwicklung einzigartiger visueller Identitäten — Logos, Farbpaletten, Typografiesysteme und Markenrichtlinien.",gd_social:"Social-Media-Design",gd_social_d:"Gestaltung ansprechender Beiträge, Storys, Banner und Werbemotive für soziale Plattformen.",gd_print:"Print & Marketing",gd_print_d:"Erstellung von Visitenkarten, Flyern, Broschüren, Postern, Bannern und Präsentationen.",images_title:"Bilder",img_ms:"MS Word / Excel / PowerPoint",videos_title:"Videos",vid1:"Video 1",vid2:"Video 2",vid3:"Video 3",vid4:"Video 4",contact_title:"Kontaktiere uns",footer_about:"Webentwickler & Designer mit Sitz in DI Khan, Pakistan. Erstellt saubere, responsive Websites mit Sorgfalt und Präzision.",footer_nav:"Navigation",footer_follow:"Folgen",footer_res:"Ressourcen",res_blog:"Mein Blog",res_cv:"Lebenslauf",res_pdf:"Portfolio-PDF",res_code:"Quellcode",res_ds:"Designsystem",ft_terms:"AGB",ft_privacy:"Datenschutz",ft_cookies:"Cookies",ft_built:"Mit Sorgfalt erstellt.",login_eyebrow:"Willkommen zurück",login_title:"Anmelden",login_email_l:"E-Mail",login_pass_l:"Passwort",login_remember:"Angemeldet bleiben",login_forgot:"Passwort vergessen?",login_btn:"Anmelden",login_foot:"Noch kein Konto?",login_signup:"Registrieren",ph_search:"Suchen..."},
+"es":{login:"Iniciar sesión",menu:"Menú",theme_word:"Tema",lang_word:"Idioma",nav_home:"Inicio",nav_about:"Sobre mí",nav_work:"Trabajos",nav_fe:"Desarrollo Frontend",nav_gd:"Diseño Gráfico",nav_images:"Imágenes",nav_videos:"Videos",nav_contact:"Contacto",available:"DISPONIBLE PARA TRABAJAR",hero_eyebrow:"Portafolio Personal",hero_name_em:"diseña y construye.",hero_role:"Desarrollador Web — Frontend y Diseño Web",hero_bio:"Construyo sitios web limpios y responsivos, y me ocupo del trabajo de oficina y técnico diario con el mismo cuidado — desde código frontend hasta documentos de MS Office. Disponible actualmente para trabajo freelance y de tiempo completo.",hero_cta1:"Ver trabajos",hero_cta2:"Contáctame →",tick1:"Desarrollo Web",tick2:"Desarrollo Frontend",tick3:"Diseño Web",tick4:"Diseño Gráfico",tick5:"HTML",tick6:"CSS",tick7:"JavaScript",tick8:"MS Office",about_title:"Sobre mí",about_p1:"Soy un desarrollador web y diseñador radicado en Pakistán, que trabaja en desarrollo frontend, diseño web y trabajo técnico y de oficina diario. Mi enfoque es simple: entender el problema y luego construirlo correctamente.",about_p2:"Además del desarrollo web, también me encargo de documentos, hojas de cálculo y presentaciones con MS Office, y cuento con un diploma técnico en operación de pozos tubulares — una mezcla de habilidades digitales y prácticas.",edu_label:"Educación",skills_label:"Habilidades",sk1:"Desarrollo Web",sk2:"Desarrollo Frontend",sk3:"Diseño Web",sk4:"MS Word",sk5:"MS Excel",sk6:"MS PowerPoint",sk7:"MS Access",sk8:"Operador de Pozos Tubulares",work_title:"Trabajos Destacados",w1t:"Plataforma de Reservas",w1d:"Rediseño integral de un producto de reservas de viajes, incluyendo un nuevo sistema de diseño.",w2t:"Panel Financiero",w2d:"Panel con gran densidad de datos para una startup fintech, construido con React y una librería de gráficos personalizada.",w3t:"Marca y Sitio Web",w3d:"Identidad y sitio de marketing para un estudio de diseño independiente.",w4t:"App de Lectura",w4d:"Concepto de app móvil de lectura que explora un diseño de interacción centrado en la tipografía.",fe_title:"Desarrollo Frontend",fe_desc:"El desarrollo frontend es el arte de construir todo lo que un usuario ve e interactúa en un sitio web. Combina estructura, estilo y comportamiento para crear experiencias web rápidas, responsivas y hermosas.",fe_html:"La columna vertebral de todo sitio web. HTML define la estructura y el contenido de las páginas web — encabezados, párrafos, imágenes, enlaces, formularios y más.",fe_css:"CSS controla la presentación visual — colores, diseños, tipografías, espaciado, animaciones y diseño responsivo para cualquier tamaño de pantalla.",fe_js:"JavaScript añade interactividad y lógica — desde menús desplegables hasta aplicaciones web complejas con actualizaciones en tiempo real.",gd_title:"Diseño Gráfico",gd_desc:"El diseño gráfico es la comunicación visual de ideas a través de imágenes, tipografía, colores y diseños.",gd_brand:"Marca e Identidad",gd_brand_d:"Creación de identidades visuales únicas — logotipos, paletas de colores, sistemas tipográficos y guías de marca.",gd_social:"Diseño para Redes Sociales",gd_social_d:"Diseño de publicaciones, historias, banners y creatividades publicitarias llamativas para plataformas sociales.",gd_print:"Impresos y Marketing",gd_print_d:"Creación de tarjetas de presentación, folletos, catálogos, pósters, banners y presentaciones.",images_title:"Imágenes",img_ms:"MS Word / Excel / PowerPoint",videos_title:"Videos",vid1:"Video 1",vid2:"Video 2",vid3:"Video 3",vid4:"Video 4",contact_title:"Contáctanos",footer_about:"Desarrollador Web y Diseñador radicado en DI Khan, Pakistán. Construyo sitios web limpios y responsivos con cuidado y precisión.",footer_nav:"Navegación",footer_follow:"Sígueme",footer_res:"Recursos",res_blog:"Mi Blog",res_cv:"Currículum / CV",res_pdf:"Portafolio PDF",res_code:"Código Fuente",res_ds:"Sistema de Diseño",ft_terms:"Términos",ft_privacy:"Privacidad",ft_cookies:"Cookies",ft_built:"Hecho con cuidado.",login_eyebrow:"Bienvenido de nuevo",login_title:"Iniciar sesión",login_email_l:"Correo electrónico",login_pass_l:"Contraseña",login_remember:"Recordarme",login_forgot:"¿Olvidaste tu contraseña?",login_btn:"Iniciar sesión",login_foot:"¿No tienes una cuenta?",login_signup:"Regístrate",ph_search:"Buscar..."},
+"fr":{login:"Connexion",menu:"Menu",theme_word:"Thème",lang_word:"Langue",nav_home:"Accueil",nav_about:"À propos",nav_work:"Projets",nav_fe:"Développement Frontend",nav_gd:"Design Graphique",nav_images:"Images",nav_videos:"Vidéos",nav_contact:"Contact",available:"DISPONIBLE POUR TRAVAILLER",hero_eyebrow:"Portfolio Personnel",hero_name_em:"conçoit & développe.",hero_role:"Développeur Web — Frontend & Design Web",hero_bio:"Je crée des sites web propres et responsives, et je m'occupe des tâches bureautiques et techniques quotidiennes avec le même soin — du code frontend aux documents MS Office. Actuellement disponible pour du travail freelance ou à temps plein.",hero_cta1:"Voir mes projets",hero_cta2:"Me contacter →",tick1:"Développement Web",tick2:"Développement Frontend",tick3:"Design Web",tick4:"Design Graphique",tick5:"HTML",tick6:"CSS",tick7:"JavaScript",tick8:"MS Office",about_title:"À propos de moi",about_p1:"Je suis un développeur web et designer basé au Pakistan, travaillant dans le développement frontend, le design web et les tâches bureautiques et techniques quotidiennes. Mon approche est simple : comprendre le problème, puis le résoudre correctement.",about_p2:"En plus du développement web, je m'occupe aussi de documents, tableurs et présentations avec MS Office, et je détiens un diplôme technique en exploitation de puits tubulaires — un mélange de compétences numériques et pratiques.",edu_label:"Formation",skills_label:"Compétences",sk1:"Développement Web",sk2:"Développement Frontend",sk3:"Design Web",sk4:"MS Word",sk5:"MS Excel",sk6:"MS PowerPoint",sk7:"MS Access",sk8:"Opérateur de Puits Tubulaires",work_title:"Projets Sélectionnés",w1t:"Plateforme de Réservation",w1d:"Refonte complète d'un produit de réservation de voyages, incluant un nouveau système de design.",w2t:"Tableau de Bord Financier",w2d:"Tableau de bord dense en données pour une startup fintech, construit avec React et une bibliothèque de graphiques sur mesure.",w3t:"Marque & Site",w3d:"Identité et site marketing pour un studio de design indépendant.",w4t:"Application de Lecture",w4d:"Concept d'application mobile de lecture explorant un design d'interaction centré sur la typographie.",fe_title:"Développement Frontend",fe_desc:"Le développement frontend est l'art de construire tout ce qu'un utilisateur voit et avec quoi il interagit sur un site web. Il combine structure, style et comportement pour créer des expériences web rapides, responsives et élégantes.",fe_html:"L'ossature de tout site web. HTML définit la structure et le contenu des pages web — titres, paragraphes, images, liens, formulaires, et plus encore.",fe_css:"CSS contrôle la présentation visuelle — couleurs, mises en page, polices, espacements, animations et design responsive pour toutes les tailles d'écran.",fe_js:"JavaScript ajoute de l'interactivité et de la logique — des menus déroulants aux applications web complexes avec mises à jour en temps réel.",gd_title:"Design Graphique",gd_desc:"Le design graphique est la communication visuelle d'idées à travers des images, la typographie, les couleurs et les mises en page.",gd_brand:"Image de Marque & Identité",gd_brand_d:"Création d'identités visuelles uniques — logos, palettes de couleurs, systèmes typographiques et chartes graphiques.",gd_social:"Design pour Réseaux Sociaux",gd_social_d:"Création de publications, stories, bannières et créations publicitaires accrocheuses pour les plateformes sociales.",gd_print:"Impression & Marketing",gd_print_d:"Création de cartes de visite, flyers, brochures, affiches, bannières et présentations.",images_title:"Images",img_ms:"MS Word / Excel / PowerPoint",videos_title:"Vidéos",vid1:"Vidéo 1",vid2:"Vidéo 2",vid3:"Vidéo 3",vid4:"Vidéo 4",contact_title:"Contactez-nous",footer_about:"Développeur Web & Designer basé à DI Khan, Pakistan. Je crée des sites web propres et responsives avec soin et précision.",footer_nav:"Navigation",footer_follow:"Suivez-moi",footer_res:"Ressources",res_blog:"Mon Blog",res_cv:"CV",res_pdf:"Portfolio PDF",res_code:"Code Source",res_ds:"Système de Design",ft_terms:"Conditions",ft_privacy:"Confidentialité",ft_cookies:"Cookies",ft_built:"Conçu avec soin.",login_eyebrow:"Content de vous revoir",login_title:"Connexion",login_email_l:"E-mail",login_pass_l:"Mot de passe",login_remember:"Se souvenir de moi",login_forgot:"Mot de passe oublié ?",login_btn:"Se connecter",login_foot:"Vous n'avez pas de compte ?",login_signup:"S'inscrire",ph_search:"Rechercher..."},
+"it":{login:"Accedi",menu:"Menu",theme_word:"Tema",lang_word:"Lingua",nav_home:"Home",nav_about:"Chi sono",nav_work:"Lavori",nav_fe:"Sviluppo Frontend",nav_gd:"Design Grafico",nav_images:"Immagini",nav_videos:"Video",nav_contact:"Contatti",available:"DISPONIBILE PER LAVORO",hero_eyebrow:"Portfolio Personale",hero_name_em:"progetta & costruisce.",hero_role:"Sviluppatore Web — Frontend & Web Design",hero_bio:"Realizzo siti web puliti e responsive e mi occupo del lavoro d'ufficio e tecnico quotidiano con la stessa cura — dal codice frontend ai documenti MS Office. Attualmente disponibile per lavoro freelance e a tempo pieno.",hero_cta1:"Vedi i lavori",hero_cta2:"Contattami →",tick1:"Sviluppo Web",tick2:"Sviluppo Frontend",tick3:"Web Design",tick4:"Design Grafico",tick5:"HTML",tick6:"CSS",tick7:"JavaScript",tick8:"MS Office",about_title:"Chi sono",about_p1:"Sono uno sviluppatore web e designer con base in Pakistan, attivo nello sviluppo frontend, nel web design e nel lavoro d'ufficio e tecnico quotidiano. Il mio approccio è semplice: capire il problema, poi risolverlo correttamente.",about_p2:"Oltre allo sviluppo web, mi occupo anche di documenti, fogli di calcolo e presentazioni con MS Office, e possiedo un diploma tecnico nella gestione di pozzi tubolari — un mix di competenze digitali e pratiche.",edu_label:"Istruzione",skills_label:"Competenze",sk1:"Sviluppo Web",sk2:"Sviluppo Frontend",sk3:"Web Design",sk4:"MS Word",sk5:"MS Excel",sk6:"MS PowerPoint",sk7:"MS Access",sk8:"Operatore di Pozzi Tubolari",work_title:"Lavori Selezionati",w1t:"Piattaforma di Prenotazione",w1d:"Riprogettazione completa di un prodotto di prenotazione viaggi, incluso un nuovo design system.",w2t:"Dashboard Finanziaria",w2d:"Dashboard ricca di dati per una startup fintech, realizzata con React e una libreria di grafici personalizzata.",w3t:"Brand & Sito",w3d:"Identità e sito di marketing per uno studio di design indipendente.",w4t:"App di Lettura",w4d:"Concept di app mobile di lettura che esplora un design d'interazione incentrato sulla tipografia.",fe_title:"Sviluppo Frontend",fe_desc:"Lo sviluppo frontend è l'arte di costruire tutto ciò che un utente vede e con cui interagisce su un sito web. Combina struttura, stile e comportamento per creare esperienze web veloci, responsive e curate.",fe_html:"La spina dorsale di ogni sito web. HTML definisce la struttura e il contenuto delle pagine web — titoli, paragrafi, immagini, link, moduli e altro.",fe_css:"CSS controlla la presentazione visiva — colori, layout, font, spaziature, animazioni e design responsive per ogni dimensione di schermo.",fe_js:"JavaScript aggiunge interattività e logica — dai menu a tendina alle applicazioni web complesse con aggiornamenti in tempo reale.",gd_title:"Design Grafico",gd_desc:"Il design grafico è la comunicazione visiva di idee attraverso immagini, tipografia, colori e layout.",gd_brand:"Branding & Identità",gd_brand_d:"Creazione di identità visive uniche — loghi, palette di colori, sistemi tipografici e linee guida del brand.",gd_social:"Design per Social Media",gd_social_d:"Progettazione di post accattivanti, storie, banner e creatività pubblicitarie per le piattaforme social.",gd_print:"Stampa & Marketing",gd_print_d:"Creazione di biglietti da visita, volantini, brochure, poster, banner e presentazioni.",images_title:"Immagini",img_ms:"MS Word / Excel / PowerPoint",videos_title:"Video",vid1:"Video 1",vid2:"Video 2",vid3:"Video 3",vid4:"Video 4",contact_title:"Contattaci",footer_about:"Sviluppatore Web & Designer con base a DI Khan, Pakistan. Realizzo siti web puliti e responsive con cura e precisione.",footer_nav:"Navigazione",footer_follow:"Seguimi",footer_res:"Risorse",res_blog:"Il Mio Blog",res_cv:"Curriculum",res_pdf:"Portfolio PDF",res_code:"Codice Sorgente",res_ds:"Design System",ft_terms:"Termini",ft_privacy:"Privacy",ft_cookies:"Cookie",ft_built:"Realizzato con cura.",login_eyebrow:"Bentornato",login_title:"Accedi",login_email_l:"Email",login_pass_l:"Password",login_remember:"Ricordami",login_forgot:"Password dimenticata?",login_btn:"Accedi",login_foot:"Non hai un account?",login_signup:"Registrati",ph_search:"Cerca..."}
+};
+const langNames={"en-US":"English (US)","en-GB":"British English (UK)","en-AU":"Australian English","en-PK":"Pakistani English","ur":"اردو","hi":"हिन्दी","de":"Deutsch","es":"Español","fr":"Français","it":"Italiano"};
+// Every language keeps its own translations for all original content.
+// Newer keys (About extras, Consultation section, nav_consult) are filled in from English
+// for languages that don't have a native translation yet, so nothing ever shows blank.
+Object.keys(langNames).forEach(code=>{
+  translations[code] = Object.assign({}, translations["en-US"], translations[code]);
+});
+
+function applyLang(code,skipToast){
+  const dict=translations[code]||translations["en-US"];
+  document.querySelectorAll('[data-t]').forEach(el=>{
+    const key=el.getAttribute('data-t');
+    if(dict[key]!==undefined){
+      el.classList.add('lang-fading');
+      setTimeout(()=>{el.textContent=dict[key];el.classList.remove('lang-fading')},90);
+    }
+  });
+  document.querySelectorAll('[data-tp]').forEach(el=>{
+    const key=el.getAttribute('data-tp');
+    if(dict[key]!==undefined)el.setAttribute('placeholder',dict[key]);
+  });
+  html.setAttribute('dir',code==='ur'?'rtl':'ltr');
+  langText.textContent=langNames[code];
+  langItems.forEach(x=>x.classList.toggle('active',x.dataset.lang===code));
+  localStorage.setItem('lang',code);
+  if(!skipToast)showToast('Language: '+langNames[code]);
+}
+
+/* ===== LANGUAGE ===== */
+const langPanel=document.getElementById('langPanel'),langBtnEl=document.getElementById('langBtn'),langItems=document.querySelectorAll('.lang-panel-item'),langText=document.getElementById('langBtnText');
+langBtnEl.addEventListener('click',e=>{e.stopPropagation();langPanel.classList.toggle('open');themePanel.classList.remove('open')});
+langItems.forEach(i=>i.addEventListener('click',()=>{applyLang(i.dataset.lang);langPanel.classList.remove('open')}));
+document.getElementById('drawerLangBtn').addEventListener('click',()=>{document.getElementById('drawer').classList.remove('open');document.getElementById('drawerOverlay').classList.remove('open');langPanel.classList.add('open')});
+
+/* ===== CLOSE PANELS ON OUTSIDE CLICK ===== */
+document.addEventListener('click',e=>{if(!e.target.closest('.theme-settings'))themePanel.classList.remove('open');if(!e.target.closest('.lang-dropdown'))langPanel.classList.remove('open')});
+
+/* ===== LOGIN MODAL ===== */
+const loginOverlay=document.getElementById('loginOverlay'),loginNote=document.getElementById('loginNote');
+document.getElementById('loginOpen').addEventListener('click',()=>loginOverlay.classList.add('open'));
+document.getElementById('loginClose').addEventListener('click',()=>{loginOverlay.classList.remove('open');loginNote.classList.remove('show')});
+loginOverlay.addEventListener('click',e=>{if(e.target===loginOverlay){loginOverlay.classList.remove('open');loginNote.classList.remove('show')}});
+document.getElementById('loginForm').addEventListener('submit',e=>{e.preventDefault();loginNote.textContent='Login functionality will be connected to your backend.';loginNote.classList.add('show')});
+
+/* ===== CONSULTATION FORM ===== */
+const consultNote=document.getElementById('consultNote');
+document.getElementById('consultForm').addEventListener('submit',e=>{
+  e.preventDefault();
+  consultNote.textContent='Thanks! Your request has been noted. This form will be connected to a real backend/email service.';
+  consultNote.classList.add('show');
+  showToast('Consultation request submitted');
+});
+
+/* ===== DRAWER ===== */
+const drawer=document.getElementById('drawer'),drawerOverlay=document.getElementById('drawerOverlay'),hamburger=document.getElementById('drawerOpen');
+function openDrawer(){drawer.classList.add('open');drawerOverlay.classList.add('open');hamburger.classList.add('open');document.body.style.overflow='hidden'}
+function closeDrawer(){drawer.classList.remove('open');drawerOverlay.classList.remove('open');hamburger.classList.remove('open');document.body.style.overflow=''}
+hamburger.addEventListener('click',openDrawer);
+document.getElementById('drawerClose').addEventListener('click',closeDrawer);
+drawerOverlay.addEventListener('click',closeDrawer);
+drawer.querySelectorAll('nav a').forEach(a=>a.addEventListener('click',closeDrawer));
+
+/* ===== SEARCH ===== */
+const searchInput=document.getElementById('searchInput'),searchClear=document.getElementById('searchClear');
+searchInput.addEventListener('input',()=>{searchClear.classList.toggle('show',searchInput.value.length>0)});
+searchClear.addEventListener('click',()=>{searchInput.value='';searchClear.classList.remove('show');document.querySelectorAll('.search-highlight').forEach(e=>e.classList.remove('search-highlight'))});
+document.getElementById('drawerSearch').addEventListener('input',function(){const q=this.value.toLowerCase();if(q.length<2)return;document.querySelectorAll('main section').forEach(s=>{if(s.textContent.toLowerCase().includes(q)){s.scrollIntoView({behavior:'smooth',block:'start'});s.classList.add('search-highlight');setTimeout(()=>s.classList.remove('search-highlight'),1500);return}})});
+
+/* ===== REVEAL ON SCROLL ===== */
+const revealObs=new IntersectionObserver((entries)=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');revealObs.unobserve(e.target)}})},{threshold:.15,rootMargin:'0px 0px -40px 0px'});
+document.querySelectorAll('.reveal').forEach(el=>revealObs.observe(el));
+
+/* ===== SCROLL TOP ===== */
+const scrollTopBtn=document.getElementById('scrollTop');
+window.addEventListener('scroll',()=>{scrollTopBtn.classList.toggle('show',window.scrollY>600)},{passive:true});
+scrollTopBtn.addEventListener('click',()=>window.scrollTo({top:0,behavior:'smooth'}));
+
+/* ===== ACTIVE NAV LINK ===== */
+const sections=document.querySelectorAll('main section[id]'),navLinks=document.querySelectorAll('.ledger-links a');
+const navObs=new IntersectionObserver((entries)=>{entries.forEach(e=>{if(e.isIntersecting){navLinks.forEach(l=>l.classList.remove('active'));const a=document.querySelector('.ledger-links a[href="#'+e.target.id+'"]');if(a)a.classList.add('active')}})},{threshold:.3,rootMargin:'-20% 0px -60% 0px'});
+sections.forEach(s=>navObs.observe(s));
+
+/* ===== SPOTLIGHT ===== */
+const spotlight=document.getElementById('spotlight');
+document.addEventListener('mousemove',e=>{spotlight.style.setProperty('--sx',e.clientX+'px');spotlight.style.setProperty('--sy',e.clientY+'px');spotlight.classList.add('active')},{passive:true});
+
+/* ===== TOAST ===== */
+function showToast(msg){const t=document.getElementById('toast');t.innerHTML='<i class="fa-solid fa-check-circle"></i>'+msg;t.classList.add('show');setTimeout(()=>t.classList.remove('show'),2200)}
+
+/* ===== SYSTEM THEME CHANGE ===== */
+window.matchMedia('(prefers-color-scheme:dark)').addEventListener('change',()=>{if(localStorage.getItem('theme')==='system')setTheme('system')});
+
+/* ===== INIT ===== */
+initTheme();
+(function initLang(){const s=localStorage.getItem('lang')||'en-US';applyLang(s,true)})();
+</script>
+</body>
+</html>
