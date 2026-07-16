@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="en">
+ <head><script>window["__codeletBootstrap__"]=JSON.parse('{"A":"A","B":"20260713-05-4d7706e"}');</script><script src="/_sdk/f432b76fb310b513.telemetry_sdk.js" integrity="sha512-9FJQ55EKmmqhyyik8BhrMVfm0+iYYfb8uOlRsjtkxJMEI97qOVEI4PnHohDjQAtvAep0IOEpdQ64eki0sz62ug=="></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Imran Rajput — Portfolio</title>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,900&amp;family=Work+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet">
+  <style>
+  body { font-family: 'Work Sans', sans-serif; }
+  h1, h2, h3, .display { font-family: 'Fraunces', serif; }
+
+  @keyframes riseIn { from { opacity: 0; transform: translateY(24px); } to { opacity: 1; transform: translateY(0); } }
+  .reveal { opacity: 0; animation: riseIn 0.7s cubic-bezier(.2,.7,.2,1) forwards; }
+  .d1 { animation-delay: .05s; } .d2 { animation-delay: .18s; }
+  .d3 { animation-delay: .31s; } .d4 { animation-delay: .44s; } .d5 { animation-delay: .57s; }
+
+  .glow-ring { box-shadow: 0 0 0 4px rgba(56,189,248,.14), 0 24px 70px -18px rgba(168,85,247,.55); }
+  .card-hover { transition: transform .35s cubic-bezier(.2,.7,.2,1), box-shadow .35s, border-color .35s; }
+  .card-hover:hover { transform: translateY(-6px); box-shadow: 0 24px 50px -24px rgba(0,0,0,.7); border-color: rgba(56,189,248,.4); }
+
+  /* Richer atmospheric background */
+  .grid-bg {
+    background-image:
+      radial-gradient(circle at 15% 10%, rgba(56,189,248,.18), transparent 42%),
+      radial-gradient(circle at 88% 18%, rgba(168,85,247,.16), transparent 40%),
+      radial-gradient(circle at 50% 95%, rgba(244,114,182,.12), transparent 45%),
+      linear-gradient(rgba(255,255,255,.035) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,.035) 1px, transparent 1px);
+    background-size: 100% 100%, 100% 100%, 100% 100%, 44px 44px, 44px 44px;
+  }
+  .accent-line { height: 4px; width: 64px; border-radius: 9999px; background: linear-gradient(90deg,#38bdf8,#a855f7); }
+  .play-overlay { transition: background .3s, transform .6s; }
+  .video-card:hover .play-overlay { background: rgba(56,189,248,.85); transform: scale(1.08); }
+  html { scroll-behavior: smooth; }
+</style>
+  <script src="/_sdk/9432170dbd2ae0df.resizing_sdk.js" type="text/javascript" integrity="sha512-FeT+58sb1f9ejWPWFjCbJvTT+SDwGV+ngrHUnlO7TWEOoqwOLj6p256kO3vOL7DIWl1cIgrobiof8v2bOigwPg=="></script>
+  <script src="/_sdk/0179d719c431a79e.data_sdk.js" type="text/javascript" integrity="sha512-OsRvJkI5GkC3MJpdP65ZCYjhuLdP7UosV2v5vwnLMGVekzD/fdchShO2FMSy0PJr/tiINMXOk5Vl2zAgg6bUiA=="></script>
+ </head>
+ <body data-template-id="__page-root" class="min-h-screen text-slate-100 grid-bg" style="width:100%;"><!-- HEADER / NAV -->
+  <header data-template-id="site-header" class="canva-header sticky top-0 z-50 backdrop-blur-md border-b border-white/10">
+   <nav class="w-full max-w-6xl mx-auto px-5 py-4 flex items-center justify-between"><a href="#top" data-template-id="nav-brand" class="canva-text display font-bold text-xl tracking-tight"></a> <button id="menu-toggle" data-template-id="menu-toggle" aria-expanded="false" aria-controls="nav-menu" class="canva-button md:hidden inline-flex items-center gap-2 px-3 py-2 rounded-lg border border-white/15"> <i data-lucide="menu" style="width:20px;height:20px;"></i> </button>
+    <ul id="nav-menu" class="hidden md:flex md:items-center md:gap-7 absolute md:static left-0 right-0 top-full md:top-auto flex-col md:flex-row bg-slate-900/95 md:bg-transparent border-b md:border-0 border-white/10 px-5 md:px-0 py-4 md:py-0 gap-4">
+     <li><a href="#skills" data-template-id="nav-link-skills" class="canva-link block font-medium hover:text-sky-400 transition-colors"></a></li>
+     <li><a href="#about" data-template-id="nav-link-about" class="canva-link block font-medium hover:text-sky-400 transition-colors"></a></li>
+     <li><a href="#services" data-template-id="nav-link-services" class="canva-link block font-medium hover:text-sky-400 transition-colors"></a></li>
+     <li><a href="#gallery" data-template-id="nav-link-gallery" class="canva-link block font-medium hover:text-sky-400 transition-colors"></a></li>
+     <li><a href="#videos" data-template-id="nav-link-videos" class="canva-link block font-medium hover:text-sky-400 transition-colors"></a></li>
+    </ul>
+   </nav>
+  </header>
+  <main id="top" class="w-full"><!-- HERO -->
+   <section data-template-id="hero-section" class="canva-section w-full">
+    <div class="w-full max-w-6xl mx-auto px-5 py-16 md:py-24 grid md:grid-cols-2 gap-12 items-center">
+     <div class="order-2 md:order-1">
+      <p data-template-id="hero-role" class="canva-text reveal d1 uppercase tracking-[0.3em] font-semibold text-sky-400" style="font-size:14px;"></p>
+      <h1 data-template-id="hero-name" class="canva-text reveal d2 mt-3 leading-tight"></h1>
+      <p data-template-id="hero-tagline" class="canva-text reveal d3 mt-5 text-slate-300 max-w-md"></p>
+      <ul class="reveal d4 mt-7 flex flex-wrap gap-2.5">
+       <li data-template-id="hero-qualifications" class="canva-tag inline-block px-4 py-2 rounded-full border border-white/10"></li>
+      </ul>
+      <div class="reveal d5 mt-8"><a href="#contact" data-template-id="hero-cta" class="canva-button inline-flex items-center gap-2 px-7 py-3 rounded-full font-semibold"> <i data-lucide="sparkles" style="width:18px;height:18px;"></i><span data-template-id="hero-cta-label"></span> </a>
+      </div>
+     </div>
+     <div class="order-1 md:order-2 flex justify-center">
+      <div class="relative reveal d2"><img data-template-id="hero-portrait" loading="lazy" class="canva-image w-56 h-56 md:w-80 md:h-80 rounded-full object-cover glow-ring border border-white/10">
+      </div>
+     </div>
+    </div>
+   </section><!-- SKILLS -->
+   <section id="skills" data-template-id="skills-section" class="canva-section w-full border-t border-white/10">
+    <div class="w-full max-w-6xl mx-auto px-5 py-16 md:py-20">
+     <div class="flex flex-col items-center mb-10">
+      <h2 data-template-id="skills-title" class="canva-text text-center"></h2>
+      <div class="accent-line mt-4"></div>
+     </div>
+     <div class="grid lg:grid-cols-2 gap-10 items-center">
+      <div class="overflow-hidden rounded-2xl border border-white/10 card-hover"><img data-template-id="skills-image" loading="lazy" class="canva-image w-full h-64 md:h-80 object-cover">
+      </div>
+      <div class="grid gap-5">
+       <article data-template-id="skill-html" class="canva-card rounded-xl p-6 border border-white/10 card-hover">
+        <div class="flex items-center gap-3 mb-2">
+         <span class="inline-flex items-center justify-center w-10 h-10 rounded-lg bg-orange-500/20 text-orange-400"><i data-lucide="code-2" style="width:22px;height:22px;"></i></span>
+         <h3 data-template-id="skill-html-title" class="canva-text"></h3>
+        </div>
+        <p data-template-id="skill-html-desc" class="canva-text text-slate-300" style="font-size:15px;"></p>
+       </article>
+       <article data-template-id="skill-css" class="canva-card rounded-xl p-6 border border-white/10 card-hover">
+        <div class="flex items-center gap-3 mb-2">
+         <span class="inline-flex items-center justify-center w-10 h-10 rounded-lg bg-sky-500/20 text-sky-400"><i data-lucide="paintbrush" style="width:22px;height:22px;"></i></span>
+         <h3 data-template-id="skill-css-title" class="canva-text"></h3>
+        </div>
+        <p data-template-id="skill-css-desc" class="canva-text text-slate-300" style="font-size:15px;"></p>
+       </article>
+       <article data-template-id="skill-js" class="canva-card rounded-xl p-6 border border-white/10 card-hover">
+        <div class="flex items-center gap-3 mb-2">
+         <span class="inline-flex items-center justify-center w-10 h-10 rounded-lg bg-yellow-500/20 text-yellow-400"><i data-lucide="zap" style="width:22px;height:22px;"></i></span>
+         <h3 data-template-id="skill-js-title" class="canva-text"></h3>
+        </div>
+        <p data-template-id="skill-js-desc" class="canva-text text-slate-300" style="font-size:15px;"></p>
+       </article>
+      </div>
+     </div>
+    </div>
+   </section><!-- ABOUT (NEW) -->
+   <section id="about" data-template-id="about-section" class="canva-section w-full border-t border-white/10">
+    <div class="w-full max-w-6xl mx-auto px-5 py-16 md:py-20">
+     <div class="grid lg:grid-cols-2 gap-12 items-center">
+      <div class="order-2 lg:order-1">
+       <h2 data-template-id="about-title" class="canva-text"></h2>
+       <div class="accent-line mt-4 mb-6"></div>
+       <p data-template-id="about-text-1" class="canva-text text-slate-300 leading-relaxed"></p>
+       <p data-template-id="about-text-2" class="canva-text text-slate-300 leading-relaxed mt-4"></p>
+       <div class="grid grid-cols-3 gap-4 mt-8">
+        <div data-template-id="about-stat-1" class="canva-card rounded-xl p-4 text-center border border-white/10 card-hover">
+         <p data-template-id="about-stat-1-value" class="canva-text display font-bold text-sky-400"></p>
+         <p data-template-id="about-stat-1-label" class="canva-text text-slate-400 mt-1" style="font-size:13px;"></p>
+        </div>
+        <div data-template-id="about-stat-2" class="canva-card rounded-xl p-4 text-center border border-white/10 card-hover">
+         <p data-template-id="about-stat-2-value" class="canva-text display font-bold text-fuchsia-400"></p>
+         <p data-template-id="about-stat-2-label" class="canva-text text-slate-400 mt-1" style="font-size:13px;"></p>
+        </div>
+        <div data-template-id="about-stat-3" class="canva-card rounded-xl p-4 text-center border border-white/10 card-hover">
+         <p data-template-id="about-stat-3-value" class="canva-text display font-bold text-pink-400"></p>
+         <p data-template-id="about-stat-3-label" class="canva-text text-slate-400 mt-1" style="font-size:13px;"></p>
+        </div>
+       </div>
+      </div>
+      <div class="order-1 lg:order-2 overflow-hidden rounded-2xl border border-white/10 card-hover"><img data-template-id="about-image" loading="lazy" class="canva-image w-full h-72 md:h-96 object-cover">
+      </div>
+     </div>
+    </div>
+   </section><!-- SERVICES (NEW) -->
+   <section id="services" data-template-id="services-section" class="canva-section w-full border-t border-white/10">
+    <div class="w-full max-w-6xl mx-auto px-5 py-16 md:py-20">
+     <div class="flex flex-col items-center mb-3">
+      <h2 data-template-id="services-title" class="canva-text text-center"></h2>
+      <div class="accent-line mt-4"></div>
+     </div>
+     <p data-template-id="services-subtitle" class="canva-text text-center text-slate-400 mb-10" style="font-size:15px;"></p>
+     <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <article data-template-id="service-1" class="canva-card rounded-2xl p-7 border border-white/10 card-hover"><span class="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-sky-500/20 text-sky-400 mb-4"><i data-lucide="monitor" style="width:24px;height:24px;"></i></span>
+       <h3 data-template-id="service-1-title" class="canva-text mb-2"></h3>
+       <p data-template-id="service-1-desc" class="canva-text text-slate-300" style="font-size:15px;"></p>
+      </article>
+      <article data-template-id="service-2" class="canva-card rounded-2xl p-7 border border-white/10 card-hover"><span class="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-fuchsia-500/20 text-fuchsia-400 mb-4"><i data-lucide="palette" style="width:24px;height:24px;"></i></span>
+       <h3 data-template-id="service-2-title" class="canva-text mb-2"></h3>
+       <p data-template-id="service-2-desc" class="canva-text text-slate-300" style="font-size:15px;"></p>
+      </article>
+      <article data-template-id="service-3" class="canva-card rounded-2xl p-7 border border-white/10 card-hover"><span class="inline-flex items-center justify-center w-12 h-12 rounded-xl bg-pink-500/20 text-pink-400 mb-4"><i data-lucide="smartphone" style="width:24px;height:24px;"></i></span>
+       <h3 data-template-id="service-3-title" class="canva-text mb-2"></h3>
+       <p data-template-id="service-3-desc" class="canva-text text-slate-300" style="font-size:15px;"></p>
+      </article>
+     </div>
+    </div>
+   </section><!-- GALLERY -->
+   <section id="gallery" data-template-id="gallery-section" class="canva-section w-full border-t border-white/10">
+    <div class="w-full max-w-6xl mx-auto px-5 py-16 md:py-20">
+     <div class="flex flex-col items-center mb-10">
+      <h2 data-template-id="gallery-title" class="canva-text text-center"></h2>
+      <div class="accent-line mt-4"></div>
+     </div>
+     <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div class="overflow-hidden rounded-2xl border border-white/10 card-hover">
+       <img data-template-id="gallery-image-1" loading="lazy" class="canva-image w-full h-64 object-cover">
+      </div>
+      <div class="overflow-hidden rounded-2xl border border-white/10 card-hover">
+       <img data-template-id="gallery-image-2" loading="lazy" class="canva-image w-full h-64 object-cover">
+      </div>
+      <div class="overflow-hidden rounded-2xl border border-white/10 card-hover">
+       <img data-template-id="gallery-image-3" loading="lazy" class="canva-image w-full h-64 object-cover">
+      </div>
+     </div>
+    </div>
+   </section><!-- VIDEOS -->
+   <section id="videos" data-template-id="videos-section" class="canva-section w-full border-t border-white/10">
+    <div class="w-full max-w-6xl mx-auto px-5 py-16 md:py-20">
+     <div class="flex flex-col items-center mb-3">
+      <h2 data-template-id="videos-title" class="canva-text text-center"></h2>
+      <div class="accent-line mt-4"></div>
+     </div>
+     <p data-template-id="videos-subtitle" class="canva-text text-center text-slate-400 mb-10" style="font-size:15px;"></p>
+     <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6"><a data-template-id="video-1" href="https://www.youtube.com/results?search_query=html+css+javascript+tutorial" target="_blank" rel="noopener noreferrer" class="canva-card video-card group block relative overflow-hidden rounded-2xl border border-white/10 card-hover"> <img data-template-id="video-1-thumb" loading="lazy" class="canva-image w-full h-52 object-cover"> <span class="play-overlay absolute inset-0 m-auto w-16 h-16 rounded-full bg-white/15 backdrop-blur flex items-center justify-center" style="top:0;bottom:60px;"><i data-lucide="play" style="width:26px;height:26px;color:#fff;fill:#fff;"></i></span>
+       <div class="absolute bottom-0 inset-x-0 p-4 bg-gradient-to-t from-black/85 to-transparent">
+        <h3 data-template-id="video-1-title" class="canva-text" style="font-size:17px;"></h3>
+       </div></a> <a data-template-id="video-2" href="https://www.youtube.com/results?search_query=graphic+design+tutorial" target="_blank" rel="noopener noreferrer" class="canva-card video-card group block relative overflow-hidden rounded-2xl border border-white/10 card-hover"> <img data-template-id="video-2-thumb" loading="lazy" class="canva-image w-full h-52 object-cover"> <span class="play-overlay absolute inset-0 m-auto w-16 h-16 rounded-full bg-white/15 backdrop-blur flex items-center justify-center" style="top:0;bottom:60px;"><i data-lucide="play" style="width:26px;height:26px;color:#fff;fill:#fff;"></i></span>
+       <div class="absolute bottom-0 inset-x-0 p-4 bg-gradient-to-t from-black/85 to-transparent">
+        <h3 data-template-id="video-2-title" class="canva-text" style="font-size:17px;"></h3>
+       </div></a> <a data-template-id="video-3" href="https://www.youtube.com/results?search_query=web+development+coding" target="_blank" rel="noopener noreferrer" class="canva-card video-card group block relative overflow-hidden rounded-2xl border border-white/10 card-hover"> <img data-template-id="video-3-thumb" loading="lazy" class="canva-image w-full h-52 object-cover"> <span class="play-overlay absolute inset-0 m-auto w-16 h-16 rounded-full bg-white/15 backdrop-blur flex items-center justify-center" style="top:0;bottom:60px;"><i data-lucide="play" style="width:26px;height:26px;color:#fff;fill:#fff;"></i></span>
+       <div class="absolute bottom-0 inset-x-0 p-4 bg-gradient-to-t from-black/85 to-transparent">
+        <h3 data-template-id="video-3-title" class="canva-text" style="font-size:17px;"></h3>
+       </div></a>
+     </div>
+    </div>
+   </section>
+  </main><!-- FOOTER / CONTACT -->
+  <footer id="contact" data-template-id="site-footer" class="canva-footer w-full border-t border-white/10">
+   <div class="w-full max-w-6xl mx-auto px-5 py-16">
+    <div class="text-center max-w-lg mx-auto">
+     <h2 data-template-id="footer-heading" class="canva-text"></h2>
+     <p data-template-id="footer-tagline" class="canva-text mt-3 text-slate-300"></p>
+    </div>
+    <div class="mt-8 flex flex-wrap items-center justify-center gap-4"><a data-template-id="footer-link-github" href="https://github.com" target="_blank" rel="noopener noreferrer" class="canva-link inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-white/15 hover:border-sky-400 hover:text-sky-400 transition-colors font-medium"><i data-lucide="github" style="width:18px;height:18px;"></i><span data-template-id="footer-github-label"></span></a> <a data-template-id="footer-link-linkedin" href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="canva-link inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-white/15 hover:border-sky-400 hover:text-sky-400 transition-colors font-medium"><i data-lucide="linkedin" style="width:18px;height:18px;"></i><span data-template-id="footer-linkedin-label"></span></a> <a data-template-id="footer-link-facebook" href="https://facebook.com" target="_blank" rel="noopener noreferrer" class="canva-link inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-white/15 hover:border-sky-400 hover:text-sky-400 transition-colors font-medium"><i data-lucide="facebook" style="width:18px;height:18px;"></i><span data-template-id="footer-facebook-label"></span></a> <a data-template-id="footer-link-email" href="mailto:imran@example.com" target="_blank" rel="noopener noreferrer" class="canva-link inline-flex items-center gap-2 px-5 py-2.5 rounded-full border border-white/15 hover:border-sky-400 hover:text-sky-400 transition-colors font-medium"><i data-lucide="mail" style="width:18px;height:18px;"></i><span data-template-id="footer-email-label"></span></a>
+    </div>
+    <p data-template-id="footer-copy" class="canva-text text-center text-slate-500 mt-10" style="font-size:14px;"></p>
+   </div>
+  </footer>
+  <script src="/_sdk/719055fef2a85d14.editing_sdk.js" integrity="sha512-kFqrdGgIiTOsu307feB5Cy3JVP9IayftsmCIZ0csxYBGuBmJQPhyvcnmKR8F0fTW97h5s1gAvz3SumI8zJ6OxQ=="></script>
+  <script>
+    const toggle = document.getElementById('menu-toggle');
+    const menu = document.getElementById('nav-menu');
+    toggle.addEventListener('click', () => {
+      const open = menu.classList.toggle('hidden') === false;
+      toggle.setAttribute('aria-expanded', String(open));
+    });
+    menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
+      if (window.innerWidth < 768) { menu.classList.add('hidden'); toggle.setAttribute('aria-expanded','false'); }
+    }));
+    lucide.createIcons();
+  </script>
+ </body>
+</html>
